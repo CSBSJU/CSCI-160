@@ -6,4 +6,5 @@ Course materials for CSCI 160
 
 ## To update
 `git pull`
+<br>
 `git submodule foreach git pull`
