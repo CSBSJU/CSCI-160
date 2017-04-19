@@ -19,3 +19,6 @@
 [submodule "Modules/Recursion/Sample Code/ArrayMax.java"]
 	path = Modules/Recursion/Sample code/ArrayMax.java
 	url = git@gist.github.com:99f4885563e019839f7856afbf024504.git
+[submodule "Modules/Collections/Sample code/Lists.java"]
+	path = Modules/Collections/Sample code/Lists.java
+	url = git@gist.github.com:4a6edf0c81911f833ffc1abd734798db.git
