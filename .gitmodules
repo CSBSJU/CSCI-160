@@ -31,3 +31,6 @@
 [submodule "Modules/Searching and sorting/Sample code/BinarySearch.java"]
 	path = Modules/Searching and sorting/Sample code/BinarySearch.java
 	url = git@gist.github.com:ca4bf1cd227e3f2a85171ba79d729395.git
+[submodule "Modules/File IO and exceptions/Sample code/Grep.java"]
+	path = Modules/File IO and exceptions/Sample code/Grep.java
+	url = git@gist.github.com:108ccc4f8b6a97b9eab15e3514f13f59.git
