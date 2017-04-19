@@ -55,10 +55,10 @@ Example inputs/outputs:
 `-- Tree.java
 
 :> java Tree ~/CS160/labs/Lab02 ~/CS160/labs/Lab03
-/home/&lt;username&gt;/CS160/labs/Lab02
+/home<username>/CS160/labs/Lab02
 |-- Lab.docx
 `-- Lab.pdf
-/home/&lt;username&gt;/CS160/labs/Lab03
+/home<username>/CS160/labs/Lab03
 |-- Lab.html
 |-- Prelab.html
 |-- Race.java
