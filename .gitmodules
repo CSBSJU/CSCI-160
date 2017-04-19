@@ -2,20 +2,20 @@
 	path = Modules/Recursion/Assignments/Tree.java
 	url = git@github.com:jiverson002/Tree.java
 [submodule "Modules/Recursion/Sample Code/ArrayCount.java"]
-	path = Modules/Recursion/Sample Code/ArrayCount.java
+	path = Modules/Recursion/Sample code/ArrayCount.java
 	url = git@gist.github.com:530610dc6b7587f123322fe897e62bff.git
 [submodule "Modules/Recursion/Sample Code/Fibonacci.java"]
-	path = Modules/Recursion/Sample Code/Fibonacci.java
+	path = Modules/Recursion/Sample code/Fibonacci.java
 	url = git@gist.github.com:47c0599ac596026b14f7bb901c480dee.git
 [submodule "Modules/Recursion/Sample Code/Factorial.java"]
-	path = Modules/Recursion/Sample Code/Factorial.java
+	path = Modules/Recursion/Sample code/Factorial.java
 	url = git@gist.github.com:83dee5f269bfe41f636d6fba2a52e758.git
 [submodule "Modules/Recursion/Sample Code/ArraySum.java"]
-	path = Modules/Recursion/Sample Code/ArraySum.java
+	path = Modules/Recursion/Sample code/ArraySum.java
 	url = git@gist.github.com:eab4d731a2fff613dbba38ebd8403031.git
 [submodule "Modules/Recursion/Sample Code/ArraySearch.java"]
-	path = Modules/Recursion/Sample Code/ArraySearch.java
+	path = Modules/Recursion/Sample code/ArraySearch.java
 	url = git@gist.github.com:ee99a634a45a5ab5c1392b5070a83ac0.git
 [submodule "Modules/Recursion/Sample Code/ArrayMax.java"]
-	path = Modules/Recursion/Sample Code/ArrayMax.java
+	path = Modules/Recursion/Sample code/ArrayMax.java
 	url = git@gist.github.com:99f4885563e019839f7856afbf024504.git
