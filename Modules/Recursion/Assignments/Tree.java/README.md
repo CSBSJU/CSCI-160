@@ -26,14 +26,14 @@ The class should define the following:
         tree is at a deeper level in the file hierarchy
       * If you really want to get fancy, do the above two steps for all but the
         last file/directory. For the last, print the prefix followed by
-        `"`-- <name>"`
+        `` "`-- <name>" ``
 
 * Public static methods
   * `tree(String)` -- takes a single `String` reference variable as a parameter.
     The parameter is the path, i.e., `/usr/people/...`, for which we are
     creating the tree. This method is the entry point for the recursive method
     `tree(String, String)` described above. It will simply call the recursive
-    `tree method, passing its parameter as the first parameter and the empty
+    `tree` method, passing its parameter as the first parameter and the empty
     string `""` as the second parameter.
 
 Your program should include the ability to be invoked (run) from the command
