@@ -22,3 +22,9 @@
 [submodule "Modules/Collections/Sample code/Lists.java"]
 	path = Modules/Collections/Sample code/Lists.java
 	url = git@gist.github.com:4a6edf0c81911f833ffc1abd734798db.git
+[submodule "Modules/Decisions/Sample code/StringComparison.java"]
+	path = Modules/Decisions/Sample code/StringComparison.java
+	url = git@gist.github.com:79421b1303705c736cba858804350fb6.git
+[submodule "Modules/Decisions/Sample code/FloatComparison.java"]
+	path = Modules/Decisions/Sample code/FloatComparison.java
+	url = git@gist.github.com:dd6f3eab9588cd5db923b0d69db51a32.git
