@@ -31,3 +31,6 @@
 [submodule "Modules/File IO and exceptions/Sample code/Grep.java"]
 	path = Modules/File IO and exceptions/Sample code/Grep.java
 	url = https://gist.github.com/108ccc4f8b6a97b9eab15e3514f13f59.git
+[submodule "Modules/Recursion/Assignments/Tree.java"]
+	path = Modules/Recursion/Assignments/Tree.java
+	url = https://gist.github.com/6bb59db4c8accc78e4ef766037bdbebf.git
