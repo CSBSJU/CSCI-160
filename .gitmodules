@@ -1,36 +1,36 @@
 [submodule "Modules/Recursion/Assignments/Tree.java"]
 	path = Modules/Recursion/Assignments/Tree.java
-	url = git@github.com:jiverson002/Tree.java
+	url = https://github.com:jiverson002/Tree.java
 [submodule "Modules/Recursion/Sample Code/ArrayCount.java"]
 	path = Modules/Recursion/Sample code/ArrayCount.java
-	url = git@gist.github.com:530610dc6b7587f123322fe897e62bff.git
+	url = https://gist.github.com:530610dc6b7587f123322fe897e62bff.git
 [submodule "Modules/Recursion/Sample Code/Fibonacci.java"]
 	path = Modules/Recursion/Sample code/Fibonacci.java
-	url = git@gist.github.com:47c0599ac596026b14f7bb901c480dee.git
+	url = https://gist.github.com:47c0599ac596026b14f7bb901c480dee.git
 [submodule "Modules/Recursion/Sample Code/Factorial.java"]
 	path = Modules/Recursion/Sample code/Factorial.java
-	url = git@gist.github.com:83dee5f269bfe41f636d6fba2a52e758.git
+	url = https://gist.github.com:83dee5f269bfe41f636d6fba2a52e758.git
 [submodule "Modules/Recursion/Sample Code/ArraySum.java"]
 	path = Modules/Recursion/Sample code/ArraySum.java
-	url = git@gist.github.com:eab4d731a2fff613dbba38ebd8403031.git
+	url = https://gist.github.com:eab4d731a2fff613dbba38ebd8403031.git
 [submodule "Modules/Recursion/Sample Code/ArraySearch.java"]
 	path = Modules/Recursion/Sample code/ArraySearch.java
-	url = git@gist.github.com:ee99a634a45a5ab5c1392b5070a83ac0.git
+	url = https://gist.github.com:ee99a634a45a5ab5c1392b5070a83ac0.git
 [submodule "Modules/Recursion/Sample Code/ArrayMax.java"]
 	path = Modules/Recursion/Sample code/ArrayMax.java
-	url = git@gist.github.com:99f4885563e019839f7856afbf024504.git
+	url = https://gist.github.com:99f4885563e019839f7856afbf024504.git
 [submodule "Modules/Collections/Sample code/Lists.java"]
 	path = Modules/Collections/Sample code/Lists.java
-	url = git@gist.github.com:4a6edf0c81911f833ffc1abd734798db.git
+	url = https://gist.github.com:4a6edf0c81911f833ffc1abd734798db.git
 [submodule "Modules/Decisions/Sample code/StringComparison.java"]
 	path = Modules/Decisions/Sample code/StringComparison.java
-	url = git@gist.github.com:79421b1303705c736cba858804350fb6.git
+	url = https://gist.github.com:79421b1303705c736cba858804350fb6.git
 [submodule "Modules/Decisions/Sample code/FloatComparison.java"]
 	path = Modules/Decisions/Sample code/FloatComparison.java
-	url = git@gist.github.com:dd6f3eab9588cd5db923b0d69db51a32.git
+	url = https://gist.github.com:dd6f3eab9588cd5db923b0d69db51a32.git
 [submodule "Modules/Searching and sorting/Sample code/BinarySearch.java"]
 	path = Modules/Searching and sorting/Sample code/BinarySearch.java
-	url = git@gist.github.com:ca4bf1cd227e3f2a85171ba79d729395.git
+	url = https://gist.github.com:ca4bf1cd227e3f2a85171ba79d729395.git
 [submodule "Modules/File IO and exceptions/Sample code/Grep.java"]
 	path = Modules/File IO and exceptions/Sample code/Grep.java
-	url = git@gist.github.com:108ccc4f8b6a97b9eab15e3514f13f59.git
+	url = https://gist.github.com:108ccc4f8b6a97b9eab15e3514f13f59.git
