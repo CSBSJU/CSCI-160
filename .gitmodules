@@ -28,3 +28,6 @@
 [submodule "Modules/Decisions/Sample code/FloatComparison.java"]
 	path = Modules/Decisions/Sample code/FloatComparison.java
 	url = git@gist.github.com:dd6f3eab9588cd5db923b0d69db51a32.git
+[submodule "Modules/Searching and sorting/Sample code/BinarySearch.java"]
+	path = Modules/Searching and sorting/Sample code/BinarySearch.java
+	url = git@gist.github.com:ca4bf1cd227e3f2a85171ba79d729395.git
