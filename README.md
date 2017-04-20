@@ -6,5 +6,11 @@ Course materials for CSCI 160
 
 ## To update
 `git pull`
-<br>
+
 `git submodule foreach git pull`
+
+To make this easier for yourself in the future, you can execute the command
+`git config alias.up '!git pull && git submodule foreach git pull'`
+which will create a new git _alias_ (read: command) called `up`. That way, to
+run the previous two commands, you can now use the single command
+`git up` 
