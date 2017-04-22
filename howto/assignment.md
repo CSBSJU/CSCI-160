@@ -21,7 +21,7 @@
 ```
 https://github.com/CSBSJU/<repo>/compare/base...master
 ```
-   <repo> should be replaced with the name of the repository created for your
+   `<repo>` should be replaced with the name of the repository created for your
    assignment submission.
 
 <!-- Links -->
