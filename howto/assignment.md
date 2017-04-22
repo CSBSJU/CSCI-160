@@ -17,8 +17,12 @@
 ### Submitting an assignment
 1. [**Push**][ref-push]/sync your changes up to GitHub if you have not done so
    already.
-1. [Create a **pull request**][pull-request] on the base branch to turn in the
-   assignment.
+1. [Create a **pull request**][pull-request] by going to the link
+```
+https://github.com/CSBSJU/<repo>/compare/base...master
+```
+   <repo> should be replaced with the name of the repository created for your
+   assignment submission.
 
 <!-- Links -->
 [ref-clone]: http://gitref.org/creating/#clone
