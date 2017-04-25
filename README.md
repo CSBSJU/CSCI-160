@@ -1,4 +1,4 @@
-# CSCI160
+# CSCI 160
 Course materials for CSCI 160
 
 ## To clone
