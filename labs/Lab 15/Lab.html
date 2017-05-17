@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:light" rel="stylesheet">
+    <style>
+      * {color: #93a1a1; font-family: "Roboto Condensed", sans-serif;}
+      body {background-color: #eee8d5;}
+      h2,h3 {color: #073642;}
+      a,a:active,a:visited {color: #d33682;}
+      pre,kbd,code {font-family: "Roboto Mono", sans-serif; font-size: 85%;}
+      kbd {color: #d33682;}
+      pre,code {color: #6c71c4;}
+    </style>
+    <title>Lab 15: Sets and Maps&#8212;Steno Pools and Inventories</title>
+  </head>
+
+  <body>
+    <h2>
+      Sets and Maps&#8212;Steno Pools and Inventories
+    </h2>
+
+    <p>
+      In this lab, you will use two sets to keep track of which workers are busy
+      and which are idle; you'll also write a program that maintains a small
+      inventory.
+    </p>
+
+    <h3>
+      Preliminaries
+    </h3>
+
+    <p>
+      Using a terminal window, copy the directory named <kbd>Lab15</kbd> from
+      <kbd>/usr/people/classes/CS160/labs</kbd> into your <kbd>CS160</kbd>
+      directory. Use the <kbd>tree</kbd> command to verify that the directory
+      structure for your local copy of <kbd>Lab15</kbd> matches the following:
+    </p>
+
+    <pre style="color: #d33682;">
+    Lab15
+    |-- Inventory.java
+    |-- Lab.html
+    |-- Part.class
+    |-- parts.txt
+    |-- solution
+    |    |-- Inventory.class
+    |    |-- Part.class
+    |    `-- StenoPool.class
+    `-- StenoPool.java
+    </pre>
+
+    <h3>
+      Part 1: Keeping track of who's busy and who's idle in the steno pool
+    </h3>
+
+    <p>
+      In the old days, there were no personal computers, no iPods, no
+      Dictaphones (and no Internet, but that's not relevant here). If a business
+      person wanted to create a document, such as sending a letter, they
+      wouldn't create it themselves&mdash;oh no!&mdash;they would use a
+      stenographer. A stenographer took dictation using shorthand and then
+      transcribed the shorthand into a document using a typewriter. In a large
+      company, business people who weren't important enough to have their own
+      personal secretary would request someone from the <em>steno pool</em>, a
+      group of stenographers who were available to take dictation and type
+      documents for the business people. Ask your grandparents if you want to
+      know more, or just watch <em>Mad Men</em>.
+    </p>
+
+    <p>
+      Your job is to write a program that manages a steno pool. The pool should
+      be implemented using two sets, one for the available stenographers and one
+      for those stenographers currently taking dictation. Just use names
+      (<code>String</code>s) for the stenographers.
+    </p>
+    
+    <p>
+      The program will handle several operations:
+    </p>
+
+    <ul>
+      <li>
+        add stenographers to the available set
+      </li>
+      <li>
+        remove them from the available set
+      </li>
+      <li>
+        list the stenographers in each set separately
+      </li>
+      <li>
+        move them between the two sets
+      </li>
+      <li>
+        quit the program.
+      </li>
+    </ul>
+
+    <p>
+      Show your work to the TA or lab instructor before you go on.
+    </p>
+
+    <h3>
+      Part 2: Keeping track of inventory
+    </h3>
+
+    <p>
+      In this part, you will write a program that manages an inventory list. You
+      should use the command interpreter from the previous exercise as a model.
+      Each inventory item, represented by the opaque class <code>Part</code>,
+      will have an <code>int</code> part number, a <code>String</code> name and
+      an <code>int</code> number of items of this part in stock.
+    </p>
+
+    <p>
+      The class <code>Part</code> has the following methods defined:
+      <ul>
+        <li>
+          <code>Part(int partNumber, String partName);</code>
+        </li>
+        <li>
+          <code>int getPartNumber();</code>
+        </li>
+        <li>
+          <code>int getPartInStock();</code>
+        </li>
+        <li>
+          <code>String getPartName();</code>
+        </li>
+        <li>
+          <code>void setPartInStock(int);</code>
+        </li>
+        <li>
+          <code>String toString();</code>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      This program will use one map for the part number, part name, and stock.
+      It will be of type <em>Map&lt;Integer, Part&gt;</em>
+    </p>
+
+    <p>
+      The program will handle several operations:
+    </p>
+
+    <ul>
+      <li>
+        Add new inventory items with an initial stock of 0. Report to the user
+        if the item couldn't be added because the part number is already in use.
+      </li>
+      <li>
+        Look up an inventory item by part number and report the part name and
+        stock.
+      </li>
+      <li>
+        Remove an inventory item by part number.
+      </li>
+      <li>
+        Add stock for an inventory item. Be sure not to add stock to an item
+        that isn't already in the map.
+      </li>
+      <li>
+        Remove stock for an inventory item, but not more than the stock on hand.
+      </li>
+      <li>
+        Display the entire inventory.
+      </li>
+      <li>
+        Save the inventory to a file, one record per line, in the format: part
+        number&lt;newline&gt;part name&lt;newline&gt;stock
+      </li>
+      <li>
+        Load a new inventory from a file in the same format. (Done for you)
+      </li>
+      <li>
+        Quit the program.
+      </li>
+    </ul>
+
+    <p>
+      When you have finished, show your work to the TA or lab instructor.
+    </p>
+
+    <h3>
+      Part 3: Extra credit
+    </h3>
+
+    <p>
+      Implement the <code>Part</code> class for yourself, i.e., delete the
+      <kbd>Part.class</kbd> file that was distributed with the lab. Then
+      correctly implement the methods described above to get your program
+      working as it was after finishing Part 2. Remember, you can always go back
+      to the <kbd>/usr/people/classes/CS160/labs/Lab15</kbd> directory to get a
+      fresh copy of <kbd>Part.class</kbd> if you need to debug.
+  </body>
+</html>

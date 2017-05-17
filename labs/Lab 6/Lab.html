@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:light" rel="stylesheet">
+    <style>
+      * {color: #93a1a1; font-family: "Roboto Condensed", sans-serif;}
+      body {background-color: #eee8d5;}
+      h2,h3 {color: #073642;}
+      a,a:active,a:visited {color: #d33682;}
+      pre,kbd,code {font-family: "Roboto Mono", sans-serif; font-size: 85%;}
+      kbd {color: #d33682;}
+      pre,code {color: #6c71c4;}
+    </style>
+    <title>Lab 6: Manipulating numeric data&#8212;a Cannon</title>
+  </head>
+
+  <body>
+    <h2>
+      Lab 6: Manipulating numeric data&#8212;a Cannon
+    </h2>
+
+    <p>
+      The very first application for the first electronic computer was to
+      compute artillery tables for cannons in World War II. In this lab, we'll
+      implement a couple of programs that compute a simple version of this
+      problem.
+    </p>
+
+    <p>
+      Complete the <a href="Prelab.html">pre-lab exercise</a> for this lab
+      before continuing with the lab exercise below.
+    </p>
+
+    <h3>
+      Preliminaries: Introduction to pair programming
+    </h3>
+
+    <p>
+      In this lab, you will be working in pairs, using a software development
+      technique called <em>pair programming</em>. The pair will be divided by
+      roles: one person will be the <em>recorder</em> and the other will be the
+      <em>developer</em>. The recorder will do all the entry of program code and
+      will keep all the files. The developer will be responsible for doing
+      things like drawing diagrams, suggesting ideas for solving the problem,
+      and watching as the recorder enters the program. <em>Both</em> programmers
+      must take part in designing the program and should continuously interact
+      as the programming is done. The principal idea is that &#8220;two heads
+      are better than one,&#8221; and there is strong research evidence that
+      pair programming is a more efficient way to produce working programs than
+      having two individuals working independently. Studies have also shown that
+      pair programming in introductory programming courses increases learning in
+      much the same way. The partners stay in the same roles for the entire lab.
+      In the next lab, the same partners will work together but they will
+      exchange roles. Note: if you are placed in a trio due to an odd number of
+      students in the lab, there is still one recorder; the other two share the
+      developer role.
+    </p>
+
+    <h3>
+      Part 1: Computing artillery data
+    </h3>
+
+    <p>
+      For a given initial velocity and angle, we are interested, in general, in
+      finding out when and where the cannonball hits the ground. With a little
+      reflection, we can recognize that the cannon ball is at ground level at
+      the value of <em>t</em> that satisfies the equation
+      <em>height</em>(<em>v</em><sub style="font-size: 50%;">0</sub>,&nbsp;<em>A</em>,&nbsp;<em>t</em>)&nbsp;=&nbsp;0.
+      We can find this value of <em>t</em> by solving the equation:
+    </p>
+
+    <pre style="font-size: 100%;">
+    <em>v<sub style="font-size: 50%;">0</sub>&nbsp;sin&nbsp;A&#8201;t&nbsp;+&nbsp;g&#8201;t<sup style="font-size: 50%;">&nbsp;2</sup>&nbsp;&#8260;&nbsp;2&nbsp;=&nbsp;0</em></pre>
+
+    <p>
+      Since this is a quadratic equation, it has two solutions, but one of them
+      is <em>t</em>&nbsp;=&nbsp;0, which clearly isn't the one we want. We can
+      eliminate the zero root by dividing both sides of the equation by
+      <em>t</em>. Solving the resulting equation for <em>t</em> is easy algebra.
+      (Yes, that means you folks need to do a little algebra at this point.)
+    </p>
+
+    <p>
+      Add a new method <code>timeToHit(v0, A)</code> that computes and returns
+      the value of <em>t</em> at which the cannonball hits the ground, and
+      another method <code>distanceToHit(v0, A)</code> that computes the
+      horizontal distance the cannonball has traveled when it hits the ground,
+      using the <code>distance()</code> and <code>timeToHit()</code> methods.
+    </p>
+
+    <p>
+      Finally write a <code>run()</code> method that gets values for <em>v0</em>
+      and <em>A</em> from the user and then uses a <code>for</code>-loop to
+      print the values of <em>t</em>, <em>height</em> and <em>dist</em> in
+      tabular form, starting at <em>t</em>&nbsp;=&nbsp;0.0 and incrementing
+      <em>t</em> by appropriate amounts until it gets to the value of <em>t</em>
+      where it hits the ground. To do this with equal divisions of
+      1/20<sup>th</sup>, for example, let the loop variable range from 0 to 20,
+      inclusive; the value of t for each iteration will be the loop variable
+      times the time to hit divided by 20.
+    </p>
+
+    <p>
+      Use the <code>readDouble()</code> method to get the values for <em>v0</em>
+      and <em>A</em>, providing a suitable prompt in each case.
+    </p>
+
+    <p>
+      Print the results using the <code>printf()</code> method. You can use
+      something like:
+    </p>
+
+    <pre>
+    this.println(String.format("%7.3f&nbsp;&nbsp;&nbsp;%7.3f&nbsp;&nbsp;&nbsp;%7.3f", t, h, d));</pre>
+
+    <p>
+      where <em>t</em>, <em>h</em> and <em>d</em> are variables for the time,
+      height and distance, respectively. The format here allocates seven
+      character spaces for each number and three decimal places, with three
+      spaces between numbers.
+    </p>
+
+    <p>
+      Make sure to add proper Javadoc comments to each method as described in
+      class.
+    </p>
+
+    <p>
+      Do several tests of your program with different values for the parameters.
+      Try an initial velocity of 15, with angles ranging from 10 to 90 degrees.
+      (What should happen if the angle is 0?) Repeat a couple of those tests
+      with an initial velocity of 30. Is the distance traveled exactly twice
+      what it was before? Try to find an angle that consistently maximizes the
+      distance traveled, then use that angle with a very high initial velocity
+      (say 10000).
+    </p>
+
+    <h3>
+      Part 2: A graphical cannon with animation
+    </h3>
+
+    <p>
+      Make a simple graphical version of the <code>Cannon</code> class (make a
+      copy of the file and change its name to <kbd>Cannon2.java</kbd>).
+    </p>
+
+    <p>
+      Change the extended class from <code>Program</code> to
+      <code>GraphicsProgram</code>. The starting point for the cannon ball
+      should be near the bottom left corner of the canvas. Taking into account
+      the size of the canvas in pixels and the values of your test in the lab,
+      decide on an appropriate scale, assuming initial velocities of up to 30.
+      For larger velocities, it's OK if the cannon ball shoots out of the
+      canvas. Most of the remaining changes will occur in the <code>run()</code>
+      method.
+    </p>
+
+    <p>
+      Use the <code>init()</code> method to draw the starting canvas. (See one
+      of your previous graphical programs for a model on how to set up the
+      <code>init()</code> method.) Draw a line to represent the ground and draw
+      a filled circle to represent the cannon ball at the starting point on the
+      ground. (Don't draw the cannon itself.) Use variables for the current
+      position of the ball and initialize them to the window coordinates of the
+      ball.
+    </p>
+
+    <p>
+      The remaining code for this class goes in the <code>run()</code> method.
+      To get the initial velocity and angle from the user, you'll need to use
+      the <code>IODialog</code> class that uses pop-up windows for I/O; you can
+      do this with code similar to the following:
+    </p>
+
+
+    <pre>
+    IODialog dialog = this.getDialog();
+    v0 = dialog.readDouble("Enter the initial velocity: ");
+    A  = dialog.readDouble("Enter the cannon angle: ");</pre>
+
+    <p>
+      In the body of the loop, compute the window coordinates of the next
+      position of the ball from the height and distance values. Note that window
+      y-coordinates go down as the height increases, so you'll need to take that
+      into account as you convert air coordinates to window coordinates. Do seek
+      help in figuring out the coordinate conversions if you find it confusing.
+      Draw a <code>GLine</code> from the current ball position to the next
+      position and then move the ball to the next position. Change the value of
+      the current position coordinates to the next position. Finally, to keep
+      the animation from going faster than you can see, put in the statement
+      <code>this.pause(50)</code>, which causes the program to wait for 50
+      milliseconds. If this seems to go too fast or too slow, try increasing or
+      decreasing the pause time.
+    </p>
+
+    <p>
+      As usual, when you are done with the in-lab exercises above, have your lab
+      instructor or TA check over your work before you leave the lab.
+    </p>
+  </body>
+</html>
