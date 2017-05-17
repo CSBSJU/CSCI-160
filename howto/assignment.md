@@ -1,6 +1,12 @@
 ## Accessing an assignment
 1. Go to the link for the assignment provided to you by your instructor.
 1. [**Clone**][ref-clone] the repository to your computer.
+1. After cloning the repository to your computer, you change directory to the
+   directory that was created and execute the following command
+```
+git remote add upstream https://github.com/CSBSJU/<repo>
+```
+
 
 ## Working on an assignment
 1. Modify the files and [**commit**][ref-commit] changes to create a history of
