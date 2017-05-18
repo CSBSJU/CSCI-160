@@ -1,3 +1,7 @@
+# do not track administrative files
+admin/
+
+# java bytecode
 *.class
 
 # Mobile Tools for Java (J2ME)
