@@ -1,6 +1,9 @@
 # do not track administrative files
 admin/
 
+# do not track archive files
+archive/
+
 # java bytecode
 *.class
 
