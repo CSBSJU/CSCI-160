@@ -1,3 +1,6 @@
+[submodule "modules/00 introduction/samples/Lecture1.java"]
+	path = modules/00 introduction/samples/Lecture1.java
+	url = https://gist.github.com/19b476e9142ccff16b01f0692fa58666.git
 [submodule "modules/03 decisions/samples/StringComparison.java"]
 	path = modules/03 decisions/samples/StringComparison.java
 	url = https://gist.github.com/79421b1303705c736cba858804350fb6.git
