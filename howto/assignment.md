@@ -1,8 +1,8 @@
 ## Accessing an assignment
 1. Go to the link for the assignment provided to you by your instructor.
 1. [**Clone**][ref-clone] the repository to your computer.
-1. After cloning the repository to your computer, change directory to the
-   directory that was created and execute the following command
+1. After cloning the repository to your computer, change to the directory
+   that was created and execute the following command
 ```
 git remote add upstream https://github.com/CSBSJU/<repo>
 ```
@@ -19,6 +19,8 @@ git remote add upstream https://github.com/CSBSJU/<repo>
       not be lost.
 
 ## Submitting an assignment
+1. [**Commit**][ref-commit] your final solution, if you have made any changes
+   since your last commit.
 1. [**Push**][ref-push]/sync your changes up to GitHub if you have not done so
    already.
 1. [Create a **pull request**][pull-request] by going to the link
