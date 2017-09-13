@@ -1,3 +1,6 @@
+[Wiki]()/Learning outcomes
+___
+
 **Learning outcomes** are designed to assess student mastery in a course.
 
 ## Coding style
