@@ -7,7 +7,6 @@
 git remote add upstream https://github.com/CSBSJU/<repo>
 ```
 
-
 ## Working on an assignment
 1. Modify the files and [**commit**][ref-commit] changes to create a history of
    the work that you have completed.
