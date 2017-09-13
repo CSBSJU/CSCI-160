@@ -31,6 +31,10 @@ https://github.com/CSBSJU/<repo>/compare/base...master
 ```
    `<repo>` should be replaced with the name of the repository that you cloned
    in step 2 under [Accessing an assignment](#accessing-an-assignment).
+   
+## Further reading
+* [Learning outcomes](Learning-outcomes.md)
+* [Basic debugging](Basic-debugging.md)
 
 <!-- Links -->
 [ref-clone]: http://gitref.org/creating/#clone
