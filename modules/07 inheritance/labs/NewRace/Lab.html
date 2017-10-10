@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:light" rel="stylesheet">
+    <style>
+      * {color: #93a1a1; font-family: "Roboto Condensed", sans-serif;}
+      body {background-color: #eee8d5;}
+      h2,h3 {color: #073642;}
+      a,a:active,a:visited {color: #d33682;}
+      pre,kbd,code {font-family: "Roboto Mono", sans-serif; font-size: 85%;}
+      kbd {color: #d33682;}
+      pre,code {color: #6c71c4;}
+    </style>
+    <title>Lab 8: A Simple Animation</title>
+  </head>
+
+  <body>
+    <h2>
+      Lab 8: Making simple animated simulations&#8212;animated boxes, turtles
+      and hares
+    </h2>
+
+    <p>
+      Notes:
+      <ol>
+        <!--<li>
+          Work with your pair partner(s) on this lab but swap roles.&nbsp; If
+          you were not the recorder last time, your role will be as recorder
+          this time.
+        </li>-->
+        <li>
+          Remember that all programs are expected to contain comments for public
+          classes, variables, constants and methods.
+        </li>
+        <li>
+          All comments set off with &#8220;***&#8221; are instructions to you as
+          the programmer. You should remove or replace those comments once
+          you've completed the instructions.
+        </li>
+        <!--<li>
+          Remember to share your files with your partner.
+        </li>-->
+      </ol>
+    </p>
+
+    <h3>
+      Part 1: Animating the turtle and the hare
+    </h3>
+
+    <p>
+      In this part of the lab we're going to redo the turtle and hare race so
+      you don't have to continually click the mouse to run the race. We will use
+      a simple inheritance hierarchy to accomplish this. At the top of our
+      hierarchy, we will have a class, <code>Racer</code>. This class will
+      implement the functionality required for a racer to run the race
+      autonomously once they are started. The <code>TurtleRacer</code> and
+      <code>HareRacer</code> classes will be sub-classes of the
+      <code>Racer</code> class, which means that they will inherit this
+      functionality.
+
+      The <code>NewRace</code> class will create the racer objects, put them on
+      the race course, and start them. Each racer will time themselves (fairly!)
+      and report their times.
+    </p>
+
+    <p>
+      Make two new Java files <kbd>TurtleRacer.java</kbd> and
+      <kbd>HareRacer.java</kbd>. Modify the files <kbd>TurtleRacer.java</kbd>
+      and <kbd>HareRacer.java</kbd> so they implement the
+      <code>TurtleRacer</code> and <code>HareRacer</code> classes, respectively;
+      use your code from Lab 4 to make your classes draw the two animals. Each
+      of these classes should be a sub-class of <code>Racer</code>, which is
+      itself a sub-class of <code>GCompound</code>. This is helpful because it
+      means that the <code>TurtleRacer</code> and <code>HareRacer</code> classes
+      are also sub-classes of the <code>GCompound</code> class.
+
+      Complete the <code>run()</code> method in the <code>Racer</code> class to
+      give your racers the ability to autonomously complete the race and report
+      their elapsed time.
+    </p>
+
+    <h3>
+      Part 2: Adding another racer
+    </h3>
+
+    <p>
+      Make a class for a new animal (not a turtle or hare). Modify the
+      <code>NewRace</code> class so that there are three racers, including one
+      of the new animal.
+    </p>
+
+    <p>
+      As usual, when you are done with the in-lab exercises above, have your lab
+      instructor or TA check over your work before you leave the lab.
+    </p>
+  </body>
+</html>
