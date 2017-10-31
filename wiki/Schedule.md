@@ -19,7 +19,7 @@ ___
 |      13 | [Arrays]                     |      7.1-7.2 |        |
 |      14 | .                            |      7.3-7.6 |        |
 |      15 | .                            |          7.7 |        |
-|         | Exam 1                       |              |        |
+|         | **Exam 1**                   |              |        |
 |      16 | [Classes]                    |      3.1-3.3 |        |
 |      17 | .                            | 3.6-3.7,8,12 |        |
 |      18 | [Inheritance & polymorphism] |      9.1-9.2 |        |
@@ -40,7 +40,7 @@ ___
 |      32 | [Java collections]           |    15.1-15.2 |        |
 |      33 | .                            |    15.3-15.4 |        |
 |      34 | .                            |    15.5-15.6 |        |
-|         | Exam 2                       |              |        |
+|         | **Exam 2**                   |              |        |
 |      35 | [Advanced topics]            |              |        |
 |      36 | .                            |              |        |
 |      37 | .                            |              |        |
@@ -67,9 +67,3 @@ ___
 [Sorting]:                    ../modules/13%20sorting
 [Java collections]:           ../modules/14%20collections
 [Advanced topics]:            ../modules/15%20advanced
-
-
-
-
-
-
