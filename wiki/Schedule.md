@@ -49,9 +49,9 @@ ___
 |      40 | .                            |              |        |
 |      41 | .                            |              | Quiz 6 |
 
-[Introduction to CSCI 160]:   ../modules00%20introduction
-[Introduction to GNU/Linux]:  ../modules00%20introduction
-[Introduction to Java]:       ../modules00%20introduction
+[Introduction to CSCI 160]:   ../modules/00%20introduction
+[Introduction to GNU/Linux]:  ../modules/00%20introduction
+[Introduction to Java]:       ../modules/00%20introduction
 [Using methods]:              ../modules/01%20methods
 [Using objects]:              ../modules/02%20objects
 [Decisions]:                  ../modules/03%20decisions
