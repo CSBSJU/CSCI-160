@@ -1,6 +1,5 @@
 /**
- *  This class provides methods that convert words and lines of test into Pig
- *  Latin.
+ *  This class provides represents a string that can be translated to Pig Latin.
  *
  *  The rules are:
  *    1. if a word has no vowels, it stays the same
@@ -12,8 +11,21 @@
  *  @author  Jim Schnepf, modified by J. Andrew Whitford Holey
  *  @version October 31, 2013
  */
-public class PigLatin
+public class PigLatinString
 {
+  /** The underlying string object. */
+  private final String string;
+
+  /**
+   * Constructor method to create a new PigLatinString object from an existing
+   * String object
+   */
+  public PigLatinString(String string)
+  {
+    this.string = string;
+  }
+
+
   /**
    * Returns true if c is an English vowel.
    *
@@ -21,7 +33,7 @@ public class PigLatin
    *
    * @return true if c is a vowel, false otherwise
    */
-  private static boolean isVowel(char c)
+  private boolean isVowel(char c)
   {
     // convert to lower-case to make comparisons easier
     c = Character.toLowerCase(c);
@@ -38,11 +50,11 @@ public class PigLatin
    *
    * @return the index of the first vowel, -1 if s contains no vowels
    */
-  private static int indexOfFirstVowel(String s)
+  private int indexOfFirstVowel(String s)
   {
-    for (int i = 0; i < s.length(); i++)
+    for (int i=0; i<s.length(); i++)
     {
-      if (PigLatin.isVowel(s.charAt(i)))
+      if (this.isVowel(s.charAt(i)))
       {
         return i;
       }
@@ -53,38 +65,33 @@ public class PigLatin
 
 
   /**
-   * Converts a word into a Pig Latin word.
+   * Translates a word in English a Pig Latin.
    *
-   * @param word the String containing the word to be converted
+   * @param word the String containing the word to be translated
    *
-   * @return word converted to Pig Latin
+   * @return word translated to Pig Latin
    */
-  public static String convertWord(String word)
+  private String translateWord(String word)
   {
-    //*** Fill in your code here following the rules described at the top of
-    //*** this file
-
-    return null; //*** This should be removed after you complete this method
+    return word;
   }
 
 
   /**
-   * Converts a sequence of words into Pig Latin.
+   * Translate a sequence of words from English to Pig Latin.
    *
-   * @param line the String containing the words
-   *
-   * @return a sequence of words in Pig Latin, each converted from the
-   *         corresponding word in line
+   * @return a sequence of words in Pig Latin, each translated from the
+   *         corresponding word in the English string
    */
-  public static String convertLine(String line)
+  public String translate()
   {
     String result = "";
 
-    for(String word : line.split(" "))
+    for (String word : this.string.split(" "))
     {
-      result += PigLatin.convertWord(word) + " ";
+      result += this.translateWord(word) + " ";
     }
 
-    return result;
+    return result.trim();
   }
 }

@@ -13,12 +13,12 @@
       kbd {color: #d33682;}
       pre,code {color: #6c71c4;}
     </style>
-    <title>Lab 13: Manipulating Text&#8212;Pig Latin</title>
+    <title>Lab 11: Manipulating Text&#8212;Pig Latin</title>
   </head>
   
   <body>
     <h2>
-      Lab 13: Manipulating Text&#8212;Pig Latin
+      Lab 11: Manipulating Text&#8212;Pig Latin
     </h2>
 
     <p>
@@ -41,23 +41,23 @@
     </h3>
 
     <p>
-      Using a terminal window, copy the directory named <kbd>Lab13</kbd> from
+      Using a terminal window, copy the directory named <kbd>Lab11</kbd> from
       <kbd>/usr/people/classes/CS160/labs</kbd> into your <kbd>CS160</kbd>
       directory. Use the <kbd>tree</kbd> command to verify that the directory
-      structure for your local copy of <kbd>Lab13</kbd> matches the following:
+      structure for your local copy of <kbd>Lab11</kbd> matches the following:
     </p>
 
     <pre style="color: #d33682;">
-    Lab13
+    Lab11
     |-- GraphicsPigLatin.java
     |-- Lab.html
-    |-- PigLatin.java
-    `-- solution
-         |-- FilePigLatin.class
-         |-- GraphicsPigLatin.class
-         |-- PigLatin.class
-         |-- test-piglatin.txt
-         `-- test.txt
+    |-- PigLatinString.java
+    |-- solution
+    |    |-- FilePigLatin.class
+    |    |-- GraphicsPigLatin.class
+    |    `-- PigLatinString.class
+    |-- test-english.txt
+    `-- test-piglatin.txt
     </pre>
 
     <h3>
@@ -66,16 +66,20 @@
 
     <p>
       You will be completing a program that can take any string of zero or more
-      words and convert it to a string of equivalent words in Pig Latin. You
-      have been given a complete main program, <code>GraphicsPigLatin</code>
-      that provides the user interface for the converter and a
-      <code>PigLatin</code> class that contains static methods for converting
-      English to Pig Latin. The user interface uses Java GUI components that we
-      haven't studied yet, but you won't need to work with those parts of the
-      program. The only part you need to complete is the
-      <code>convertWord()</code> method in the <code>PigLatin</code> class. The
-      rules for how the method should work are in the class comment at the top
-      of the file.
+      English words and translate it to a string of equivalent words in Pig
+      Latin. You have been given a complete main program,
+      <code>GraphicsPigLatin</code>, that provides the user interface for the
+      translater and a class, <code>PigLatinString</code>, that represents a
+      string that can be translated from English to Pig Latin. The user
+      interface uses Java GUI components that we haven't studied yet, but you
+      won't need to work with those parts of the program. The
+      <code>translate()</code> method in the <code>PigLatinString</code> class,
+      completed for you, is responsible for translating a
+      <code>PigLatinString</code> object from English to Pig Latin, but it
+      relies on the unfinished <code>translateWord()</code> method. Your job is
+      to complete the <code>translateWord()</code> method in the
+      <code>PigLatinString</code> class. The rules for how the method should
+      work are in the class comment at the top of the file.
     </p>
 
     <p>
@@ -87,7 +91,7 @@
     </h3>
 
     <p>
-      The <code>convertWord()</code> method doesn't work correctly for words
+      The <code>translateWord()</code> method doesn't work correctly for words
       beginning with a capital consonant. Modify this method so that it handles
       this case correctly; for example, “Pig Latin” will become “Igpay Atinlay”
       instead of “igPay atinLay.” The <code>Character</code> and
@@ -104,12 +108,19 @@
     </h3>
 
     <p>
-      Write a new <code>Program</code> that opens a <code>Scanner</code> on a
-      text file (using a <code>FileChooser</code>), reads and converts each line
-      of the file to Pig Latin, and writes each converted line to another file
-      using a <code>PrintWriter</code> (also opened with a
-      <code>FileChooser</code>.) Use the same methods in the
-      <code>PigLatin</code> class for this program.
+      Write a new program that opens a <code>Scanner</code> on a text file,
+      reads and translates each line of the file to Pig Latin, and writes each
+      translated line to another file using a <code>PrintWriter</code>. The
+      paths for the files should be provided as command-line arguments, i.e.,
+      the <code>args</code> array in the <code>main()</code> method. Study the
+      <code>actionPerformed()</code> method in the <code>GraphicsPigLatin</code>
+      class for example usage of the <code>PigLatinString</code> class and its
+      <code>translate()</code> method.
+    </p>
+
+    <p>
+      You can use the two text files provided in the lab directory, or create
+      some of your own, to check your solution for correctness.
     </p>
 
     <p>
