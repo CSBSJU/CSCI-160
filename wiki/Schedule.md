@@ -7,7 +7,7 @@ ___
 |       1 | Introduction to CSCI 160   |              |        |
 |       2 | Introduction to GNU/Linux  |              |        |
 |       3 | Introduction to Java       |            4 |        |
-|       4 | [Using methods](modules/00 introduction)              |              |        |
+|       4 | Using methods              |              |        |
 |       5 | .                          |              |        |
 |       6 | .                          |              |        |
 |       7 | Using objects              |      2.1-2.3 |        |
