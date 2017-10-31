@@ -7,7 +7,7 @@ ___
 |       1 | Introduction to CSCI 160   |              |        |
 |       2 | Introduction to GNU/Linux  |              |        |
 |       3 | Introduction to Java       |            4 |        |
-|       4 | Using methods              |              |        |
+|       4 | [Using methods]            |              |        |
 |       5 | .                          |              |        |
 |       6 | .                          |              | Quiz 1 |
 |       7 | Using objects              |      2.1-2.3 |        |
@@ -48,3 +48,5 @@ ___
 |      39 | .                          |              |        |
 |      40 | .                          |              |        |
 |      41 | .                          |              | Quiz 6 |
+
+[Using methods]: modules/00%20introduction
