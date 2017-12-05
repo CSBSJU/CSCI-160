@@ -3,6 +3,10 @@ package cannon;
 // sin, cos, toRadians
 import static java.lang.Math.*;
 
+/**
+ * A set of methods that implement physics functions related to a cannon ball
+ * flying through the air.
+ */
 public class Physics
 {
   /**
