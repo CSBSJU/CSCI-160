@@ -3,7 +3,7 @@
 # # pages in order as they should show up.
 main:
   - title: "Syllabus"
-    url: /syllabus/
+    url: syllabus.html
   - title: "Modules"
     url: /modules/
   - title: "Wiki"
