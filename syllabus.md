@@ -1,3 +1,9 @@
+---
+layout: page
+title: "Syllabus"
+permalink: /syllabus/
+---
+
 ## Course overview & objectives
 Programming is at the core of computer science. Although most of the work done by computer scientists is not programming per se, that work is almost always under-girded by a knowledge of programming. It is essential that both programmers and computer scientists learn to program and to do so well. This course will provide students with the opportunity to learn the fundamental concepts and techniques of object-oriented computer programming. The object-oriented programming paradigm promises to improve the quality and reliability of computer software. In this course we will use the Java language, which is currently the most popular object-oriented language. Upon successful completion of the course, students will be able to:
 * write well-designed Java programs for small-scale problems,
