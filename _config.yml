@@ -4,6 +4,7 @@ description: Course materials for CSCI 160.
 lang: en
 timezone: UTC
 exclude:
+  - AUTHORS
   - Gemfile
   - LICENSE
   - LICENSE.MIT
