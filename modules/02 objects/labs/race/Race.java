@@ -10,11 +10,11 @@ import acm.graphics.*;
 // GraphicsProgram
 import acm.program.GraphicsProgram;
 
-
 /**
  * A race program between a turtle (oval) and a hare (square)
  * 
- * @author <your name>, based on a template by Lynn Ziegler
+ * @author <Your name> based on a template by CSB|SJU Computer Science faculty
+ *         members
  */
 public class Race extends GraphicsProgram
 {
@@ -22,7 +22,6 @@ public class Race extends GraphicsProgram
   private GOval turtle;
   private GRect hare;
   private GLine startLine, finishLine;
-
 
   /**
    *  Entry point for ACM Program -- this is where the program will start.
@@ -33,7 +32,6 @@ public class Race extends GraphicsProgram
     //*** starting positions
   }
  
-
   /**
    * Move the racers forward with each click
    */
