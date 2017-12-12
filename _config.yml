@@ -1,4 +1,12 @@
 title: CSCI 160
+author: CSBSJU
+description: Course materials for CSCI 160.
+lang: en
+timezone: UTC
+exclude:
+  - Gemfile
+  - LICENSE
+  - LICENSE.MIT
 
 plugins:
   - jekyll-remote-theme
