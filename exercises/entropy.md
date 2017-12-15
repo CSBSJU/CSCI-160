@@ -1,6 +1,6 @@
 # Password entropy
 
-### Learning objectives
+#### Learning objectives
 This exercise is designed to help you learn about (and assess whether you have learned about):
 * How to understand a problem.
 * How to write an algorithm for solving a problem.
@@ -11,7 +11,7 @@ As a practical matter, this exercise will help you become comfortable with the v
 
 Lastly, this exercise will give you a better understanding and appreciation for password entropy.
 
-### Background
+#### Background
 Have you ever wondered why many websites have password requirements like:
 * be a minimum of 8 and a maximum of 16 characters
 * must contain at least one
@@ -37,5 +37,5 @@ public class Main
 }
 ```
 
-## Disclaimer
+### Disclaimer
 The program that you develop for this exercise should **NOT** be considered a measure of the strength of a particular password. An obvious example would be the password '*P@ssw0rd*', whose entropy would be computed as XXXXX, but in practice would be among the first passwords checked by any cracker worth their salt.
