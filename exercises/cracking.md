@@ -1,4 +1,4 @@
-# Password cracking
+## Password cracking
 
 ### Learning objectives
 This exercise is designed to help you learn about (and assess whether you have learned about):
