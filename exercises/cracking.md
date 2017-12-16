@@ -1,4 +1,4 @@
-# Password entropy
+# Password cracking
 
 #### Learning objectives
 This exercise is designed to help you learn about (and assess whether you have learned about):
@@ -9,7 +9,7 @@ This exercise is designed to help you learn about (and assess whether you have l
 
 As a practical matter, this exercise will help you become comfortable with the various policies (including submission policies and grading policies) that you must comply with while working on them and the various tools you will use while working on them.
 
-Lastly, this exercise will give you a better understanding and appreciation for password entropy.
+Lastly, this exercise will give you a better understanding and appreciation for password composition.
 
 #### Background
 Have you ever wondered why many websites have password requirements like:
@@ -29,15 +29,15 @@ They are an attempt to prevent users from choosing passwords that are easy to gu
 
 By requiring the inclusion of certain groups of characters, it prevents the use of passwords such as those listed above, at least in their most obvious form. If a cracking program is unable to quickly guess a password based on a dictionary of common passwords, it is necessary to use *brute-force* to guess the password, i.e., check all possible passwords that satisfy the requirements.
 
-A useful exercise for any computer literate person interested in the security of their password protected identity is to determine how many possible passwords could be constructed from a given set of requirements, and how long it would take a cracking program to check all such passwords. These total number of passwords can be expressed as:
+A useful exercise for any computer literate person interested in the security of their password protected identity is to determine how many possible passwords could be constructed from a given set of requirements, and how long it would take a cracking program to check all such passwords. The total number of passwords of length *L* that can be created from an alphabet of size *C* can be expressed as:
 
-(1) C<sup>L</sup>,
+(1) *C*<sup>*L*</sup>.
 
-where *C* is the number of in the password alphabet, and *L* is the length of the password.
+Using equation (1), the time it would take for a cracking program, capable of *G* guesses per second, to check all passwords of minimum length *N* and maximum length *M* can be expressed as:
 
-This is only an indication of how strong a password is, since 
+(2) (*C*<sup>*N*</sup>+*C*<sup>*N*+1</sup>+&#8943;+*C*<sup>*M*</sup>)/*G*.
 
-&#8721;
+Keep in mind this is not necessarily an indication of how long it would take to crack a particular password, only of how long to search the entire password space. It is conceivable that any given password will be found in less time that that indicated. Still, it allows you to compare the impact of alphabet size and password length on the search space and time.
 
 ``` java
 package password;
