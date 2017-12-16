@@ -40,14 +40,14 @@ Using equation [1], the time it would take for a cracking program, capable of *G
 Keep in mind this is not an indication of how long it would take to crack a particular password, only of how long to search the entire password space. It is conceivable that any given password will be found in less time than that indicated. Still, it allows you to compare the effect of alphabet size and password length on the search space and time.
 
 ``` java
-package password;
+package cracking;
 
 public class Main
 {
   public static void main(String [] args)
   {
-    /* Write code here to compute the time it would take to brute-force search for a
-     * password. */
+    /* Write code here to compute the time it would take to brute-force search an
+     * password space. */
   }
 }
 ```
