@@ -1,6 +1,6 @@
 # Password cracking
 
-#### Learning objectives
+### Learning objectives
 This exercise is designed to help you learn about (and assess whether you have learned about):
 * How to understand a problem.
 * How to write an algorithm for solving a problem.
@@ -11,7 +11,7 @@ As a practical matter, this exercise will help you become comfortable with the v
 
 Lastly, this exercise will give you a better understanding and appreciation for password composition.
 
-#### Background
+### Background
 Have you ever wondered why many websites have password requirements like:
 * be a minimum of 8 and a maximum of 16 characters
 * must contain at least one
