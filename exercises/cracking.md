@@ -31,11 +31,11 @@ By requiring the inclusion of certain groups of characters, it prevents the use 
 
 A useful exercise for any computer literate person interested in the security of their password protected identity is to determine how many possible passwords could be constructed from a given set of requirements, and how long it would take a cracking program to check all such passwords. The total number of passwords of length *L* that can be created from an alphabet of size *C* can be expressed as:
 
-(1) *C*<sup>*L*</sup>.
+[1] *C*<sup>*L*</sup>.
 
-Using equation (1), the time it would take for a cracking program, capable of *G* guesses per second, to check all passwords of minimum length *N* and maximum length *M* can be expressed as:
+Using equation [1], the time it would take for a cracking program, capable of *G* guesses per second, to check all passwords of minimum length *N* and maximum length *M* can be expressed as:
 
-(2) (*C*<sup>*N*</sup>+*C*<sup>*N*+1</sup>+&#8943;+*C*<sup>*M*</sup>)/*G*.
+[2] (*C*<sup>*N*</sup>+*C*<sup>*N*+1</sup>+&#8943;+*C*<sup>*M*</sup>)/*G*.
 
 Keep in mind this is not an indication of how long it would take to crack a particular password, only of how long to search the entire password space. It is conceivable that any given password will be found in less time than that indicated. Still, it allows you to compare the effect of alphabet size and password length on the search space and time.
 
