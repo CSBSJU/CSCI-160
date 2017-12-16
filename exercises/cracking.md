@@ -2,10 +2,10 @@
 
 ### Learning objectives
 This exercise is designed to help you learn about (and assess whether you have learned about):
-* How to understand a problem.
-* How to write an algorithm for solving a problem.
-* How to write a simple program in Java using variables, conditions, loops, and terminal output.
-* How to create test cases that can be used to verify the correctness of an algorithm.
+* how to understand a problem.
+* how to write an algorithm for solving a problem.
+* how to write a simple program in Java using variables, conditions, loops, and terminal output.
+* how to create test cases that can be used to verify the correctness of an algorithm.
 
 As a practical matter, this exercise will help you become comfortable with the various policies (including submission policies and grading policies) that you must comply with while working on them and the various tools you will use while working on them.
 
