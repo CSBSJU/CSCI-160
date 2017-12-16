@@ -19,8 +19,23 @@ Have you ever wondered why many websites have password requirements like:
   * lower-case letter,
   * number, and
   * special character: ! $ / % @ #
+  
+They are an attempt to prevent users from choosing passwords that are easy to guess. In this context, it will not be a person guessing, but rather a machine running a cracking program, capable of thousands or millions of guesses per second. It turns out that when requirments like this are not enforced people tend to pick easily guessable passwords. According to many sources, some of the most popular passwords are:
+* password
+* 123456
+* qwerty
+* monkey
+* password1
 
-They are an attempt to prevent the use of passwords that are easy to guess. The underlying idea is to increase the amount of entropy in user selected passwords. Entropy is a measure of the randomness of the space of possible passwords that could be generated using the above rules.
+By requiring the inclusion of certain groups of characters, it prevents the use of passwords such as those listed above, at least in their most obvious form. If a cracking program is unable to quickly guess a password based on a dictionary of common passwords, it is necessary to use *brute-force* to guess the password, i.e., check all possible passwords that satisfy the requirements.
+
+A useful exercise for any computer literate person interested in the security of their password protected identity is to determine how many possible passwords could be constructed from a given set of requirements, and how long it would take a cracking program to check all such passwords. These total number of passwords can be expressed as:
+
+(1) C<sup>L</sup>,
+
+where *C* is the number of in the password alphabet, and *L* is the length of the password.
+
+This is only an indication of how strong a password is, since 
 
 &#8721;
 
