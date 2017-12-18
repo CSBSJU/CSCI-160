@@ -51,10 +51,21 @@ It will be your job to compute the total size of the alphabet from the value of 
 ``` java
 package cracking;
 
+/**
+ * A program to compute the length of time it would take to brute force a
+ * password, given the search space of possible passwords.
+ */
 public class Main
 {
-  public static String PROTOTYPE = "D/8d......";
-  
+  /**
+   * The password prototype --- summarizes requirements of the passwords
+   * accepted and defines the alphabet.
+   */
+  public static String PROTOTYPE = "aaaa";
+
+  /**
+   * This is where the program starts.
+   */
   public static void main(String [] args)
   {
   }
