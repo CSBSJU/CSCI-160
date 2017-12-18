@@ -37,7 +37,7 @@ Using equation [1], the time it would take for a cracking program, capable of *G
 
 [2] (*C*<sup>*N*</sup>+*C*<sup>*N*+1</sup>+&#8943;+*C*<sup>*M*</sup>)/*G*.
 
-Keep in mind this is not an indication of how long it would take to crack a particular password, only of how long to search the entire password space. It is conceivable that any given password will be found in less time than that indicated. Still, it allows you to compare the effect of alphabet size and password length on the search space and time.
+Keep in mind that this is not an indication of how long it would take to crack a particular password, only of how long to search the entire password space. It is conceivable that any given password will be found in less time than that indicated. Still, it allows you to compare the effect of alphabet size and password length on the search space and time.
 
 ``` java
 package cracking;
