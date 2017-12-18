@@ -46,7 +46,7 @@ You are to write a program, called ```Main```, that calculates the number of pas
 * digits [0-9], and
 * special characters [!$/%@#].
 
-It will be your job to compute the total size of the alphabet from the value of ```PROTOTYPE``` by increasing the alphabet size by an appropriate amount based on which classes it contains. In the example below, the alphabet size would be 26 because ```PROTOTYPE``` only contains lower-case letters, of which there are 26.
+It will be your job to compute the total size of the alphabet from the value of ```PROTOTYPE``` by increasing the alphabet size by an appropriate amount based on which classes it contains. In the example below, the alphabet size would be 26 because ```PROTOTYPE``` only contains lower-case letters, of which there are 26. For simplicity, we will assume that the minimum password length is always one and that the maximum length is the length of ```PROTOTYPE```.
 
 ``` java
 package cracking;
