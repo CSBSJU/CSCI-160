@@ -58,8 +58,8 @@ package cracking;
 public class Main
 {
   /**
-   * The password prototype --- captures requirements of the passwords
-   * accepted and defines the alphabet.
+   * The password prototype --- captures requirements of the passwords accepted
+   * and defines the alphabet.
    */
   public static String PROTOTYPE = "aaaa";
   /**
