@@ -39,18 +39,38 @@ Using equation [1], the time it would take for a cracking program, capable of *G
 
 Keep in mind that this is not an indication of how long it would take to crack a particular password, only of how long to search the entire password space. It is conceivable that any given password will be found in less time than that indicated. Still, it allows one to compare the effect of alphabet size and password length on the search space and time.
 
+### Instructions
+You are to write a program, called ```Main```, that calculates the number of passwords that can be constructed from some alphabet, as well as the time it would take to search the entire password space assuming a cracking program capable of some number of guesses per second. For this problem, the alphabet size will be dictated by the variable ```PROTOTYPE```, that will contain a string of characters representing the different *classes* of characters allowed in a password. Possible character classes are:
+* lower-case letters [a-z],
+* upper-case letters [A-Z],
+* digits [0-9], and
+* special characters [!$/%@#].
+
+It will be your job to compute the total size of the alphabet from the value of ```PROTOTYPE``` by increasing the alphabet size by an appropriate amount based on which classes it contains. In the example below, the alphabet size would be 68 = 26 + 26 + 10 + 6.
+
 ``` java
 package cracking;
 
 public class Main
 {
+  public static String PROTOTYPE = "D/8d......";
+  
   public static void main(String [] args)
   {
-    /* Write code here to compute the time it would take to brute-force search an
-     * password space. */
   }
 }
 ```
+
+To find out if a [```String```](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) contains any one of a set of characters, you can use the [```matches(String regex)```](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#matches(java.lang.String)) method. In this case, the argument ```regex``` should be one of the following, depending on the character class your are checking for:
+* lower-case letters ```".*[a-z].*"```,
+* upper-case letters ```".*[A-Z].*"```,
+* digits ```".*[0-9].*"```, or
+* special characters ```".*[!$/%@#].*"```.
+
+The characters ```.*``` before and after the brackets enclosing the character set will include matches found anywhere in the ```String``` object that the method is being called on.
+
+### Testing
+You are responsible for testing the correctness of your program. Does it output the correct value for all possible choices of the value of ```PROTOTYPE```? Is this something that you could actually verify?
 
 ### Disclaimer
 The program that you develop for this exercise should **NOT** be considered a measure of the strength of a particular password. An obvious example would be the password '*P@ssw0rd*', whose entropy would be computed as XXXXX, but in practice would be among the first passwords checked by any cracker worth their salt.
