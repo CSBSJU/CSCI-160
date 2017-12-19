@@ -114,4 +114,4 @@ After downloading the testing program to the directory where you developed your 
 At this point, you have a program worthy of up to 94%. To be eligible for full-marks, you must do one last thing &mdash; improve your code so that it passes all but test9 in the testing program. For your information, the cause of a failure is the same for test8 and test9, however, the solution to test8 is much more straight-forward than that of test9.
 
 ### Disclaimer
-The program that you develop for this exercise should **NOT** be considered a measure of the strength of a particular password. An obvious example would be the password '*P@ssw0rd*', which, according to the program would take 147.53338 centuries to crack, but in practice would be among the first passwords checked by any cracker worth their salt.
+The program that you develop for this exercise should **NOT** be considered a measure of the strength of a particular password. An obvious example would be the password '*P@ssw0rd*', which, according to the program, would take 147.53338 centuries to crack, but in practice would be among the first passwords checked by any cracker worth their salt.
