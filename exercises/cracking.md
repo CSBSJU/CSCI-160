@@ -106,7 +106,7 @@ One of the most important tasks when developing a piece of software is to test i
 
 Be judicious about your choice of test cases, so that you are not repeating calculations that will ulitmately produce the same results. For example, it is probably not necessary to check both ```"aaaa"``` and ```"bbbb"``` since they define the same alphabet and have the same maximum length.
 
-If you are satisfied with your set of test cases and your program is producing correct results, then your set of test cases is inadequate. If you have found a test case for which your program produces incorrect output, after thinking about it for some time, you cannot come up with any test cases for which your program produces incorrect results, then you should download and run this [testing program](TODO).
+If you are satisfied with your set of test cases and your program is producing correct results, then your set of test cases is inadequate. If you have found a test case for which your program produces incorrect output, or you cannot come with any such cases after thinking about it for some time, then you should download and run this [testing program](TODO).
 
 To run the testing program, download it to the same directory where you developed your program, make sure that your program is compiled, then click the ```Test``` button in DrJava. This will run your program using a pre-defined set of test cases and report whether or not your program produced the correct output. The testing program should report two failures (test8 and test9). If it reports more, then you should address each of them until only these two remain.
 
