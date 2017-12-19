@@ -5,5 +5,7 @@ main:
     url: /syllabus/
   - title: "Modules"
     url: /modules/
+  - title: "Exercises"
+    url: /exercises/
   - title: "Wiki"
     url: /wiki/
