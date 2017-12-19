@@ -103,7 +103,7 @@ To make your program more user friendly, it should present the time to search us
 * years, or
 * centuries.
 
-For example, if the number of seconds to search the space is less than 60, it should use the unit *seconds*, however if it is greater than 60, but less than 60\*60=3600, then it should use the unit *minutes* and so on, all the way up to centuries.
+For example, if the number of seconds to search the space is less than 60, it should use the unit *seconds*, however if it is greater than 60, but less than 60\*60=3600, then it should use the unit *minutes* and so on, all the way up to *centuries*.
 
 ### Testing
 One of the most important tasks when developing a piece of software is to test it to ensure its correctness. To this end, you should create a set of test cases to test your code under different conditions. For this exercise, the test cases will be different values of the variable ```PROTOTYPE```. You should manually compute the search space size and time to search for each of the test cases, and then check your results against those of your program. Some examples of test cases might be:
