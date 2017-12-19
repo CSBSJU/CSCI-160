@@ -49,8 +49,6 @@ You are to write a program, called ```Main```, using the example below as a star
 It will be your job to compute the total size of the alphabet from the value of ```PROTOTYPE``` by increasing the alphabet size by an appropriate amount based on which classes it contains. In the example below, the alphabet size would be 26 because ```PROTOTYPE``` only contains lower-case letters, of which there are 26. For simplicity, we will assume that the minimum password length is always one and that the maximum length is the length of ```PROTOTYPE```.
 
 ``` java
-package cracking;
-
 /**
  * A program to compute the length of time it would take to brute force a
  * password, given the search space of possible passwords.
