@@ -108,7 +108,7 @@ Be judicious about your choice of test cases, so that you are not repeating calc
 
 If you are satisfied with your set of test cases and your program is producing correct results, then your set of test cases is inadequate. If you have found a test case for which your program produces incorrect output, or you cannot come with any such cases after thinking about it for some time, then you should download and run this [testing program](TODO).
 
-To run the testing program, download it to the same directory where you developed your program, make sure that your program is compiled, then click the ```Test``` button in DrJava. This will run your program using a pre-defined set of test cases and report whether or not your program produced the correct output. The testing program should report two failures (test8 and test9). If it reports more, then you should address each of them until only these two remain.
+After downloading the testing program to the directory where you developed your own program, make sure that your program is compiled, and click the ```Test``` button in DrJava. This will run your program using a pre-defined set of test cases and report whether or not your program produced the correct output. The testing program should report two failures (test8 and test9). If it reports more, then you should address each of them until only these two remain.
 
 ### Improvements
 At this point, you have a program worthy of up to 94%. To be eligible for full-marks, you must do one last thing &mdash; improve your code so that it passes all but test9 in the testing program. For your information, the cause of a failure is the same for test8 and test9, however, the solution to test8 is much more straight-forward than that of test9.
