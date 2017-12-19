@@ -40,7 +40,7 @@ Using equation [1], the time it would take for a cracking program, capable of *G
 Keep in mind that this is not an indication of how long it would take to crack a particular password, only of how long to search the entire password space. It is conceivable that any given password will be found in less time than that indicated. Still, it allows one to compare the effect of alphabet size and password length on the search space and time.
 
 ### Instructions
-You are to write a program, called ```Main```, that calculates the number of passwords that can be constructed from some alphabet, as well as the time it would take to search the entire password space assuming a cracking program capable of some number of guesses per second. For this problem, the alphabet size will be dictated by the variable ```PROTOTYPE```, that will contain a string of characters representing the different *classes* of characters allowed in a password. Possible character classes are:
+You are to write a program, called ```Main```, using the example below as a starting point. The purpose of the program is to calculate the number of passwords that can be constructed from some alphabet, as well as the time it would take to search the entire password space assuming a cracking program capable of some number of guesses per second. For this problem, the alphabet size will be dictated by the variable ```PROTOTYPE```, that will contain a string of characters representing the different *classes* of characters allowed in a password. Possible character classes are:
 * lower-case letters [a-z],
 * upper-case letters [A-Z],
 * digits [0-9], and
@@ -84,8 +84,34 @@ To find out if a [```String```](https://docs.oracle.com/javase/7/docs/api/java/l
 
 The characters ```.*``` before and after the brackets enclosing the character set will include matches found anywhere in the ```String``` object that the method is being called on.
 
+Your program should output **EXACTLY** two lines to the console. The first line should report the size of the search space, i.e., total number of passwords that can be constructed, and the second should report the time to search the entire space. The output format of your program should **EXACTLY** match the following example:
+``` sh
+Search space size: 1558868884
+Time to search:    2.57749 weeks
+```
+which can be produced by the following two lines of Java code:
+``` java
+System.out.println("Search space size: " + size);                       
+System.out.println("Time to search:    " + String.format("%.5f", time) + " " + unit);
+```
+where ```size```, ```time```, ```unit``` are three variables that represent the search space size, the time to search, and the units for the time respectively.
+
 ### Testing
-You are responsible for testing the correctness of your program. Does it output the correct value for all possible choices of the value of ```PROTOTYPE```? Is this something that you could actually verify?
+One of the most important tasks when developing a piece of software is to test it to ensure its correctness. To this end, you should create a set of test cases to test your code under different conditions. For this assignment, the test cases will be different values of the variable ```PROTOTYPE```. You should manually compute the search space size and time to search for each of the test cases, and then check your results against those of your program. Some examples of test cases might be:
+* ```"aaaa"```
+* ```"AAAA"```
+* ```"0000"```
+* ```"!!!!"```
+* ```"aA0!"```
+
+Be judicious about your choice of test cases, so that you are not repeating calculations that will ulitmately produce the same results. For example, it is probably not necessary to check both ```"aaaa"``` and ```"bbbb"``` since they define the same alphabet and have the same maximum length.
+
+If you are satisfied with your set of test cases and your program is producing correct results, then your set of test cases is inadequate. If you have found a test case for which your program produces incorrect output, after thinking about it for some time, you cannot come up with any test cases for which your program produces incorrect results, then you should download and run this [testing program](TODO).
+
+To run the testing program, download it to the same directory where you developed your program, make sure that your program is compiled, then click the ```Test``` button in DrJava. This will run your program using a pre-defined set of test cases and report whether or not your program produced the correct output. The testing program should report two failures (test8 and test9). If it reports more, then you should address each of them until only these two remain.
+
+### Improvements
+At this point, you have a program worthy of up to 94%. To be eligible for full-marks, you must do one last thing &mdash; improve your code so that it passes all but test9 in the testing program. For your information, the cause of a failure is the same for test8 and test9, however, the solution to test8 is much more straight-forward than that of test9.
 
 ### Disclaimer
-The program that you develop for this exercise should **NOT** be considered a measure of the strength of a particular password. An obvious example would be the password '*P@ssw0rd*', whose entropy would be computed as XXXXX, but in practice would be among the first passwords checked by any cracker worth their salt.
+The program that you develop for this exercise should **NOT** be considered a measure of the strength of a particular password. An obvious example would be the password '*P@ssw0rd*', which, according to the program would take 147.53338 centuries to crack, but in practice would be among the first passwords checked by any cracker worth their salt.
