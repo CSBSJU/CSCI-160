@@ -1,7 +1,6 @@
 ---
 title: "Syllabus"
 permalink: /syllabus/
-toc: true
 ---
 
 ### Course overview & objectives
