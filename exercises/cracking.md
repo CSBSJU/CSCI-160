@@ -4,6 +4,9 @@ permalink: /exercises/cracking/
 sidebar:
   nav: "cracking"
 ---
+## TL;DR
+Implement a program to calculate the number of passwords that can be constructed from some alphabet, as well as the time it would take to search the entire password space assuming a cracking program capable of some number of guesses per second.
+
 ## Learning objectives
 This exercise is designed to help you learn about (and assess whether you have learned about):
 * how to understand a problem.
@@ -44,7 +47,7 @@ Using equation [1], the time it would take for a cracking program, capable of *G
 Keep in mind that this is not an indication of how long it would take to crack a particular password, only of how long to search the entire password space. It is conceivable that any given password will be found in less time than that indicated. Still, it allows one to compare the effect of alphabet size and password length on the search space and time.
 
 ## Instructions
-You are to write a program, called ```Main```, using the example below as a starting point. The purpose of the program is to calculate the number of passwords that can be constructed from some alphabet, as well as the time it would take to search the entire password space assuming a cracking program capable of some number of guesses per second. For this problem, the alphabet size will be dictated by the variable ```PROTOTYPE```, that will contain a string of characters representing the different *classes* of characters allowed in a password. Possible character classes are:
+You are to write a program, called ```Main```, using the example below as a starting point. For this problem, the alphabet size will be dictated by the variable ```PROTOTYPE```, that will contain a string of characters representing the different *classes* of characters allowed in a password. Possible character classes are:
 * lower-case letters [a-z],
 * upper-case letters [A-Z],
 * digits [0-9], and
@@ -120,6 +123,9 @@ After downloading the testing program to the directory where you developed your 
 
 ## Improvements
 At this point, you have a program worthy of up to 94%. To be eligible for full-marks, you must do one last thing &mdash; improve your code so that it passes all but test9 in the testing program. For your information, the cause of a failure is the same for test8 and test9, however, the solution to test8 is much more straight-forward than that of test9.
+
+## FAQs
+None so far. Reload this page periodically to check if any arise.
 
 ## Disclaimer
 The program that you develop for this exercise should **NOT** be considered a measure of the strength of a particular password. An obvious example would be the password '*P@ssw0rd*', which, according to the program, would take 147.53338 centuries to crack, but in practice would be among the first passwords checked by any cracker worth their salt.
