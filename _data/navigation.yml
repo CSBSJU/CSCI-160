@@ -12,7 +12,7 @@ cracking:
   - title: Password cracking
     children:
     - title: TL;DR
-      url: /exercises/cracking#tl-dr
+      url: /exercises/cracking#tldr
     - title: Learning objectives
       url: /exercises/cracking#learning-objectives
     - title: Background
