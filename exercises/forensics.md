@@ -16,7 +16,7 @@ This exercise is designed to help you learn about (and assess whether you have l
 Lastly, this exercise will give you a better understanding and appreciation for filesystems and photo storage.
 
 ## Background
- Just the other day, I took a stroll around campus with a friend (Dan Armendariz of MIT, whose skills with a camera outshine my point-and-shoot tendencies) snapping photos, all of which were stored as JPEGs on a 1GB CompactFlash (CF) card. Rather than act like typical tourists, taking photos of John Harvard's foot (ugh) and squirrels (I mean, really), we opted to shoot identifiable but non-obvious persons, places, and things on campus.
+Just the other day, I took a stroll around campus with a friend (Dan Armendariz of MIT, whose skills with a camera outshine my point-and-shoot tendencies) snapping photos, all of which were stored as JPEGs on a 1GB CompactFlash (CF) card. Rather than act like typical tourists, taking photos of John Harvard's foot (ugh) and squirrels (I mean, really), we opted to shoot identifiable but non-obvious persons, places, and things on campus.
 
 Unfortunately, I somehow corrupted that CF card the moment I got home. Both my Mac and PC refuse to recognize the card now as having any photos, even though I'm pretty sure we took them. Both operating systems want to format the card, but, thus far, I've refused to let them, hoping instead someone can come to the rescue.
 
@@ -70,5 +70,8 @@ http://maps.google.com/support/bin/answer.py?hl=en&answer=68480#photos
 
 The section whose students collectively identify the most photographs shall win an amazing prize. In the event of a tie, the section that submits the most photos (and their URL) first shall be declared the winner!
 
+## FAQs
+None so far. Reload this page periodically to check if any arise.
+
 ## Attribution
-This work is adapted from [CSI: Computer Science Investigation](http://nifty.stanford.edu/2010/malan-csi/) by David Malan licensed under a [Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License](http://creativecommons.org/licenses/by-nc-sa/3.0/). 
+This work is adapted from [CSI: Computer Science Investigation](http://nifty.stanford.edu/2010/malan-csi/) by David Malan, licensed under a [Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License](http://creativecommons.org/licenses/by-nc-sa/3.0/). 
