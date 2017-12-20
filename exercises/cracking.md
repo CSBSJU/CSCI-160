@@ -2,7 +2,6 @@
 title: "Password cracking"
 permalink: /exercises/cracking/
 sidebar:
-  title: "Password cracking"
   nav: "cracking"
 ---
 ## Learning objectives
