@@ -58,17 +58,7 @@ rm -f *.jpg
 
 Just be careful with that -f switch, as it "forces" deletion.
 
-And now the proverbial icing on the cake. You are hereby challenged to find as many of the persons, places, and things that we photographed on campus as possible. To prove that you found some place or thing, take a photo of yourself (or of someone in your section) posing next to or near that same person, place, or thing! Put your photos (i.e., the photos you took, not the ones that we took that you recovered) online somewhere (e.g., Picasa Web Albums) and link to those photos on a Google Map that indicates where you found each person, place, or thing.
-
-Here's how to create a map:
-
-Creating a Map
-http://maps.google.com/support/bin/answer.py?hl=en&answer=68480#overview_my_maps
-
-Adding Photos
-http://maps.google.com/support/bin/answer.py?hl=en&answer=68480#photos
-
-The section whose students collectively identify the most photographs shall win an amazing prize. In the event of a tie, the section that submits the most photos (and their URL) first shall be declared the winner!
+The section whose students collectively identify the most photographs shall win an amazing prize. In the event of a tie, the section that submits the most photos first shall be declared the winner!
 
 ## FAQs
 None so far. Reload this page periodically to check if any arise.
