@@ -11,7 +11,7 @@ main:
 cracking:
   - title: Password cracking
     children:
-    - title: tl;dr
+    - title: TL;DR
       url: /exercises/cracking#tl-dr
     - title: Learning objectives
       url: /exercises/cracking#learning-objectives
