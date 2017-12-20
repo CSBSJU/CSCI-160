@@ -60,8 +60,8 @@ It will be your job to compute the total size of the alphabet from the value of 
 public class Main
 {
   /**
-   * The password prototype --- captures requirements of the passwords accepted
-   * and defines the alphabet.
+   * The password prototype --- defines the alphabet based on which character
+   * classes it includes.
    */
   public static String PROTOTYPE = "aaaa";
   /**
@@ -69,12 +69,7 @@ public class Main
    */
   public static double G = 1000.0;
   
-  /**
-   * This is where the program starts.
-   */
-  public static void main(String [] args)
-  {
-  }
+  // ...
 }
 ```
 
