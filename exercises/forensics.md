@@ -64,4 +64,4 @@ The section whose students collectively identify the most photographs shall win 
 None so far. Reload this page periodically to check if any arise.
 
 ## Attribution
-This work is adapted from [CSI: Computer Science Investigation](http://nifty.stanford.edu/2010/malan-csi/) by David Malan, licensed under a [Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License](http://creativecommons.org/licenses/by-nc-sa/3.0/). 
+This work is adapted from [CSI: Computer Science Investigation](http://nifty.stanford.edu/2010/malan-csi/) by David Malan, licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-nc-sa/3.0/). 
