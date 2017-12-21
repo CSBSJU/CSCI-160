@@ -11,7 +11,7 @@ Implement a program to recover lost photos from a corrupted SD card.
 This exercise is designed to help you learn about (and assess whether you have learned about):
 * how to understand a problem.
 * how to write an algorithm for solving a problem.
-* how to write a simple program in Java using file i/o.
+* how to write a simple program in Java using multiple classes and file i/o.
 
 Lastly, this exercise will give you a better understanding and appreciation for filesystems and photo storage.
 
