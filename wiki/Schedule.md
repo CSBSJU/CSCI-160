@@ -1,9 +1,7 @@
-[Wiki]()/Schedule
-___
-
 ## Course schedule
-| Lecture |            Topic             |     Reading  | Notes  |
-| -------:|:----------------------------:| ------------:| ------ |
+
+| Lecture | Topic                        | Reading      | Notes  |
+| ------- | ---------------------------- | ------------ | ------ |
 |       1 | [Introduction to CSCI 160]   |              |        |
 |       2 | [Introduction to GNU/Linux]  |              |        |
 |       3 | [Introduction to Java]       |            4 |        |
