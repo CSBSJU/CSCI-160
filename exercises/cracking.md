@@ -129,3 +129,4 @@ None so far. Reload this page periodically to check if any arise.
 
 ## Disclaimer
 The program that you develop for this exercise should **NOT** be considered a measure of the strength of a particular password. An obvious example would be the password '*P@ssw0rd*', which, according to the program, would take 147.53338 centuries to crack, but in practice would be among the first passwords checked by any cracker worth their salt.
+{: .notice--warning}
