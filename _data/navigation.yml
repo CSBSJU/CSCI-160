@@ -1,45 +1,19 @@
-main:
-  - title: "Syllabus"
-    url: /syllabus/
-  - title: "Modules"
-    url: /modules/
-  - title: "Exercises"
-    url: /exercises/
-  - title: "Wiki"
-    url: /wiki/
-    
-cracking:
-  - title: Password cracking
+docs:
+  - title: "Logistics"
     children:
-    - title: TL;DR
-      url: /exercises/cracking#tldr
-    - title: Learning objectives
-      url: /exercises/cracking#learning-objectives
-    - title: Background
-      url: /exercises/cracking#background
-    - title: Instructions
-      url: /exercises/cracking#instructions
-    - title: Testing
-      url: /exercises/cracking#testing
-    - title: Improvements
-      url: /exercises/cracking#improvements
-    - title: FAQs
-      url: /exercises/cracking#faqs
-    - title: Disclaimer
-      url: /exercises/cracking#disclaimer
-      
-forensics:
-  - title: Image forensics
+      - title: 'Instructor <span class="fas fa-external-link-alt"></span>'
+        url: http://www.users.csbsju.edu/~jiverson002/
+      - title: "Syllabus"
+        url: /syllabus/
+      - title: "Schedule"
+        url: /schedule/
+      - title: 'Grades <span class="fas fa-external-link-alt"></span>'
+        url: https://csbsju.instructure.com/courses/9283/grades
+  - title: "Course material"
     children:
-    - title: TL;DR
-      url: /exercises/cracking#tldr
-    - title: Learning objectives
-      url: /exercises/cracking#learning-objectives
-    - title: Background
-      url: /exercises/cracking#background
-    - title: Instructions
-      url: /exercises/cracking#instructions
-    - title: FAQs
-      url: /exercises/cracking#faqs
-    - title: Attribution
-      url: /exercises/cracking#attribution
+    - title: "Slides"
+      url: /slides/
+    - title: "Exercises"
+      url: /exercises/
+    - title: "Study guides"
+      url: /study-guides/

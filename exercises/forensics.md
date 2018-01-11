@@ -1,8 +1,6 @@
 ---
 title: "Image forensics"
 permalink: /exercises/forensics/
-sidebar:
-  nav: "forensics"
 ---
 ## TL;DR
 Implement a program to recover lost photos from a corrupted SD card.
