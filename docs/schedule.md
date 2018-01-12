@@ -1,9 +1,7 @@
 ---
-title: "Schedule"
+title: "Course schedule"
 permalink: /schedule/
 ---
-
-## Course schedule
 
 | Legend |   |
 | -----: | - |
