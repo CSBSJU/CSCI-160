@@ -1,36 +1,36 @@
 [submodule "modules/00 introduction/samples/Lecture1.java"]
-	path = modules/00 introduction/samples/Lecture1.java
+	path = assets/modules/00 introduction/samples/Lecture1.java
 	url = https://gist.github.com/19b476e9142ccff16b01f0692fa58666.git
 [submodule "modules/03 decisions/samples/StringComparison.java"]
-	path = modules/03 decisions/samples/StringComparison.java
+	path = assets/modules/03 decisions/samples/StringComparison.java
 	url = https://gist.github.com/79421b1303705c736cba858804350fb6.git
 [submodule "modules/03 decisions/samples/FloatComparison.java"]
-	path = modules/03 decisions/samples/FloatComparison.java
+	path = assets/modules/03 decisions/samples/FloatComparison.java
 	url = https://gist.github.com/dd6f3eab9588cd5db923b0d69db51a32.git
 [submodule "modules/09 io/samples/Grep.java"]
-	path = modules/09 io/samples/Grep.java
+	path = assets/modules/09 io/samples/Grep.java
 	url = https://gist.github.com/108ccc4f8b6a97b9eab15e3514f13f59.git
 [submodule "modules/11 recursion/samples/ArrayCount.java"]
-	path = modules/11 recursion/samples/ArrayCount.java
+	path = assets/modules/11 recursion/samples/ArrayCount.java
 	url = https://gist.github.com/530610dc6b7587f123322fe897e62bff.git
 [submodule "modules/11 recursion/samples/Fibonacci.java"]
-	path = modules/11 recursion/samples/Fibonacci.java
+	path = assets/modules/11 recursion/samples/Fibonacci.java
 	url = https://gist.github.com/47c0599ac596026b14f7bb901c480dee.git
 [submodule "modules/11 recursion/samples/Factorial.java"]
-	path = modules/11 recursion/samples/Factorial.java
+	path = assets/modules/11 recursion/samples/Factorial.java
 	url = https://gist.github.com/83dee5f269bfe41f636d6fba2a52e758.git
 [submodule "modules/11 recursion/samples/ArraySum.java"]
-	path = modules/11 recursion/samples/ArraySum.java
+	path = assets/modules/11 recursion/samples/ArraySum.java
 	url = https://gist.github.com/eab4d731a2fff613dbba38ebd8403031.git
 [submodule "modules/11 recursion/samples/ArraySearch.java"]
-	path = modules/11 recursion/samples/ArraySearch.java
+	path = assets/modules/11 recursion/samples/ArraySearch.java
 	url = https://gist.github.com/ee99a634a45a5ab5c1392b5070a83ac0.git
 [submodule "modules/11 recursion/samples/ArrayMax.java"]
-	path = modules/11 recursion/samples/ArrayMax.java
+	path = assets/modules/11 recursion/samples/ArrayMax.java
 	url = https://gist.github.com/99f4885563e019839f7856afbf024504.git
 [submodule "modules/12 searching/samples/BinarySearch.java"]
-	path = modules/12 searching/samples/BinarySearch.java
+	path = assets/modules/12 searching/samples/BinarySearch.java
 	url = https://gist.github.com/ca4bf1cd227e3f2a85171ba79d729395.git
 [submodule "modules/14 collections/samples/Lists.java"]
-	path = modules/14 collections/samples/Lists.java
+	path = assets/modules/14 collections/samples/Lists.java
 	url = https://gist.github.com/4a6edf0c81911f833ffc1abd734798db.git

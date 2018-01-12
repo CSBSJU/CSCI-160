@@ -23,5 +23,7 @@ defaults:
       author_profile: false
       share: false
       comments: false
+      toc_label: "Contents"
+      toc_icon: "list-ul"
       sidebar:
         nav: "docs"
