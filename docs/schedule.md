@@ -5,6 +5,10 @@ permalink: /schedule/
 
 ## Course schedule
 
+| Legend |   |
+| -----: | - |
+| <span class="far fa-file-pdf"></span><br><span class="fas fa-pencil-alt"></span><br><span class="fas fa-flask"></span> | link to a slide deck<br>exercise due date and link to write-up<br>lab meeting |
+
 | Date                             | Topic                                                    | Reading                          | Lab                                                                          | Notes                                 |
 | -------------------------------: | -------------------------------------------------------- | -------------------------------- | ---------------------------------------------------------------------------- | ------------------------------------- |
 | 15 JAN \|<br>\|<br>\|            | Intro to CSCI 160<br>Intro to GNU/Linux<br>Intro to Java | <br><br>1                        | <span class="fas fa-flask"></span><br><br>                                   |                                       |
