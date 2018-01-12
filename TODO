@@ -17,3 +17,8 @@ Update the following labs to use the driver class paradigm
 [ ] Lab 17
 [ ] Lab 18
 [ ] Lab 19
+
+[ ] Add the test program for the cracking exercise in a format that is
+    compatible with DrJava. Using .class or .jar does not seem to work... it
+    appears that DrJava requires the source file to be open in the editor for
+    its "Test" functionality to work.
