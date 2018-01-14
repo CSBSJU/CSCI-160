@@ -1,3 +1,8 @@
+---
+title: "Welcome to Problem Solving, Programming and Computers"
+permalink: /
+---
+
 ## Getting started
 
 ### To clone
