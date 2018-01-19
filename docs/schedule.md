@@ -9,7 +9,7 @@ permalink: /schedule/
 
 | Date                             | Topic                                                    | Reading                          | Lab                                                                          | Notes                                                        |
 | -------------------------------: | -------------------------------------------------------- | -------------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| 15 JAN \|<br>\|<br>\|            | Intro to CSCI 160<br>Intro to GNU/Linux<br>Intro to Java | <br><br>1                        | <span class="fas fa-flask"></span><br><br>                                   | <br>[<span class="far fa-file-pdf"></span>][INTRO]<br>&nbsp; |
+| 15 JAN \|<br>\|<br>\|            | Intro to CSCI 160<br>Intro to GNU/Linux<br>Intro to Java | <br><br>1                        | <span class="fas fa-flask"></span><br><br>                                   | <br>[<span class="far fa-file-pdf"></span>][INTRO]<br>[<span class="far fa-file-pdf"></span>][JAVA] |
 | <del>22 JAN \|</del><br>\|<br>\| | <br>Using objects<br>.                                   | <br>2.1-2.4,2.8<br>2.5-2.6       | <span class="fas fa-flask"></span><br><span class="fas fa-flask"></span><br> |                                                              |
 | 29 JAN \|<br>\|<br>\|            | Implementing classes<br>.<br>.                           | 3.1-3.3<br>3.5<br>3.6-3.7        | <span class="fas fa-flask"></span><br><br>                                   |                                                              |
 | 05 FEB \|<br>\|<br>\|            | Numbers and arithmetic<br>Input and output<br>Strings    | 4.1-4.2<br>4.3<br>4.5            | <span class="fas fa-flask"></span><br><span class="fas fa-flask"></span><br> |                                                              |
@@ -38,3 +38,4 @@ permalink: /schedule/
 [EX2]: ../exercises/2/
 [EX3]: ../exercises/3/
 [INTRO]: ../assets/slides/intro/slides.pptx
+[JAVA]:  ../assets/slides/java/slides.pptx
