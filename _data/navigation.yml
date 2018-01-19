@@ -9,10 +9,10 @@ docs:
         url: /schedule/
       - title: 'Grades <span class="fas fa-external-link-alt"></span>'
         url: https://csbsju.instructure.com/courses/9283/grades
-#  - title: "Course material"
-#    children:
-#    - title: "Slides"
-#      url: /slides/
+  - title: "Course material"
+    children:
+    - title: "Slides"
+      url: /slides/
 #    - title: "Exercises"
 #      url: /exercises/
 #    - title: "Study guides"
