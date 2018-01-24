@@ -7,3 +7,5 @@ permalink: /slides/
 
 [Java](../assets/slides/java/slides.pptx)
 
+[Methods+Classes](../assets/slides/methods+classes/slides.pptx)
+
