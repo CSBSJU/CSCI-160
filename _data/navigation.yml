@@ -13,6 +13,8 @@ docs:
     children:
     - title: "Slides"
       url: /slides/
+    - title: "Sample code"
+      url: /sample-code/
 #    - title: "Exercises"
 #      url: /exercises/
 #    - title: "Study guides"
