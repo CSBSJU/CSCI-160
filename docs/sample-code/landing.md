@@ -1,6 +1,7 @@
 ---
 title: "Sample code"
 permalink: /sample-code/
+toc: true
 ---
 
 ## Methods+Classes
