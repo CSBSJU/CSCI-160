@@ -5,13 +5,13 @@ permalink: /schedule/
 
 | Legend |   |
 | -----: | - |
-| <span class="far fa-file-pdf"></span><br><span class="fas fa-pencil-alt"></span><br><span class="fas fa-flask"></span><br><span class="fab fa-github"></span> | link to a slide deck<br>exercise due date and link to write-up<br>lab meeting<br>link to sample code |
+| <span class="far fa-file-powerpoint"></span><br><span class="fas fa-pencil-alt"></span><br><span class="fas fa-flask"></span><br><span class="fab fa-github"></span> | link to a slide deck<br>exercise due date and link to write-up<br>lab meeting<br>link to sample code |
 
 | Date                             | Topic                                                    | Reading                          | Lab                                                                          | Notes                                                        |
 | -------------------------------: | -------------------------------------------------------- | -------------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| 15 JAN \|<br>\|<br>\|            | Intro to CSCI 160<br>Intro to GNU/Linux<br>Intro to Java | <br><br>1                        | <span class="fas fa-flask"></span><br><br>                                   | <br>[<span class="far fa-file-pdf"></span>][INTRO]<br>[<span class="far fa-file-pdf"></span>][JAVA]                              |
-| <del>22 JAN \|</del><br>\|<br>\| | <br>Using objects<br>.                                   | <br>2.1-2.4,2.8<br>2.5-2.6       | <span class="fas fa-flask"></span><br><span class="fas fa-flask"></span><br> | <br>[<span class="far fa-file-pdf"></span>][METHODS+CLASSES] [<span class="fab fa-github"></span>][METHODS+CLASSES-GH]<br>&nbsp; |
-| 29 JAN \|<br>\|<br>\|            | Implementing classes<br>.<br>.                           | 3.1-3.3<br>3.5<br>3.6-3.7        | <span class="fas fa-flask"></span><br><br>                                   | <br>[<span class="fab fa-github"></span>][CLASSES-GH]<br>&nbsp;                                                                  |
+| 15 JAN \|<br>\|<br>\|            | Intro to CSCI 160<br>Intro to GNU/Linux<br>Intro to Java | <br><br>1                        | <span class="fas fa-flask"></span><br><br>                                   | <br>[<span class="far fa-file-powerpoint"></span>][INTRO]<br>[<span class="far fa-file-powerpoint"></span>][JAVA]                       |
+| <del>22 JAN \|</del><br>\|<br>\| | <br>Using objects<br>.                                   | <br>2.1-2.4,2.8<br>2.5-2.6       | <span class="fas fa-flask"></span><br><span class="fas fa-flask"></span><br> | <br>[<span class="far fa-file-powerpoint"></span>][METHODS+CLASSES] [<span class="fab fa-github"></span>][METHODS+CLASSES-GH]<br>&nbsp; |
+| 29 JAN \|<br>\|<br>\|            | Implementing classes<br>.<br>.                           | 3.1-3.3<br>3.5<br>3.6-3.7        | <span class="fas fa-flask"></span><br><br>                                   | <br>[<span class="far fa-file-powerpoint"></span>][CLASSES] [<span class="fab fa-github"></span>][CLASSES-GH]<br>&nbsp;                 |
 | 05 FEB \|<br>\|<br>\|            | Numbers and arithmetic<br>Input and output<br>Strings    | 4.1-4.2<br>4.3<br>4.5            | <span class="fas fa-flask"></span><br><span class="fas fa-flask"></span><br> |  |
 | 12 FEB \|<br>\|<br>\|            | Decisions<br>Loops<br>[Exam 1]                           | 5<br>6<br>&nbsp;                 | <br>[Lab Exam 1]<br>                                                         |  |
 | 19 FEB \|<br>\|<br><del>\|</del> | Arrays<br>.<br>&nbsp;                                    | 7.1<br>7.2-7.3<br>&nbsp;         | <span class="fas fa-flask"></span><br><br>                                   |  |
@@ -41,4 +41,5 @@ permalink: /schedule/
 [JAVA]:  ../assets/slides/java/slides.pptx
 [METHODS+CLASSES]:    ../assets/slides/methods+classes/slides.pptx
 [METHODS+CLASSES-GH]: ../sample-code#methodsclasses
+[CLASSES]:    ../assets/slides/classes/slides.pptx
 [CLASSES-GH]: ../sample-code#classes

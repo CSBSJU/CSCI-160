@@ -9,3 +9,5 @@ permalink: /slides/
 
 [Methods+Classes](../assets/slides/methods+classes/slides.pptx)
 
+[Classes](../assets/slides/classes/slides.pptx)
+
