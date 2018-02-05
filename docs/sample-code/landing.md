@@ -9,3 +9,4 @@ toc: true
 
 ## Classes
 <script src="https://gist.github.com/jiverson002/cf8b3aa980cf1b6f089ebf77516d238d.js"></script>
+<script src="https://gist.github.com/jiverson002/c71e0cc24517296ef3bf6d35f6be564c.js"></script>
