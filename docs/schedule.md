@@ -34,13 +34,12 @@ permalink: /schedule/
 [Quiz 5]: https://csbsju.instructure.com/courses/9283/assignments/72852
 [Quiz 6]: https://csbsju.instructure.com/courses/9283/assignments/72853
 [Quiz 7]: https://csbsju.instructure.com/courses/9283/assignments/73439
-[Exam 1]: ../study-guides/exam1/
-[Exam 2]: ../study-guides/exam2/
-[Exam 3]: ../study-guides/exam3/
-[Lab Exam 1]: ../study-guides/labexam1/
-[Lab Exam 2]: ../study-guides/labexam2/
-[Lab Exam 3]: ../study-guides/labexam3/
-[Final exam]: ../study-guides/final/
+[Exam 1]: https://csbsju.instructure.com/courses/9283/assignments/72823
+[Exam 2]: https://csbsju.instructure.com/courses/9283/assignments/72824
+[Final exam]: https://csbsju.instructure.com/courses/9283/assignments/72821
+[Lab Exam 1]: https://csbsju.instructure.com/courses/9283/assignments/72843
+[Lab Exam 2]: https://csbsju.instructure.com/courses/9283/assignments/72844
+[Lab Exam 3]: https://csbsju.instructure.com/courses/9283/assignments/72845
 [EX1]: ../exercises/1/
 [EX2]: ../exercises/2/
 [EX3]: ../exercises/3/
