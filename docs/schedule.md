@@ -49,3 +49,4 @@ permalink: /schedule/
 [METHODS+CLASSES-GH]: ../sample-code#methodsclasses
 [CLASSES]:    ../assets/slides/classes/slides.pptx
 [CLASSES-GH]: ../sample-code#classes
+[INHERITANCE]: ../assets/slides/inheritance/slides.pptx

@@ -11,3 +11,4 @@ permalink: /slides/
 
 [Classes](../assets/slides/classes/slides.pptx)
 
+[Inheritance](../assets/slides/inheritance/slides.pptx)
