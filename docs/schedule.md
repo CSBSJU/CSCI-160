@@ -25,7 +25,7 @@ permalink: /schedule/
 | 16 APR \|<br>\|<br>\|            | .<br>Java collections<br>.                               | 14.8<br>15<br>15                 | <span class="fas fa-fw fa-flask"></span><br><span class="fas fa-fw fa-flask"></span><br> |  |
 | 23 APR \|<br>\|<br>\|            | .<br>.<br>.                                              | 15<br>15<br>15                   | <span class="fas fa-fw fa-flask"></span><br><span class="fas fa-fw fa-flask"></span><br> | <br><br>[<span class="far fa-fw fa-question-circle"></span>][Quiz 7] |
 | 30 APR \|<br>\|<br>\|            | Advanced topics: GUIs<br>Advanced topics: generics<br>.  | 18<br>20<br>20                   | <span class="fas fa-fw fa-flask"></span><br>[Lab Exam 3]<br>                             |  |
-| 10 MAY \|                        | [Final exam]                                             |                                  |                                                                                          |  |
+| 09 MAY \|                        | [Final exam]                                             |                                  |                                                                                          |  |
 
 [Quiz 1]: https://csbsju.instructure.com/courses/9283/assignments/72848
 [Quiz 2]: https://csbsju.instructure.com/courses/9283/assignments/72849
