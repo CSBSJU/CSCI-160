@@ -3,9 +3,9 @@ title: "Course schedule"
 permalink: /schedule/
 ---
 
-| Legend |   |
-| -----: | - |
-| <span class="far fa-fw fa-question-circle"></span><br><span class="far fa-fw fa-file-powerpoint"></span><br><span class="fas fa-fw fa-pencil-alt"></span><br><span class="fas fa-fw fa-flask"></span><br><span class="fab fa-fw fa-github"></span> | in-class quiz<br>slide deck<br>exercise due date<br>lab meeting<br>sample code |
+| Legend |   |   |   |
+| -----: | - | - | - |
+| <span class="far fa-fw fa-question-circle"></span><br><span class="far fa-fw fa-file-powerpoint"></span><br><span class="fas fa-fw fa-pencil-alt"></span> | in-class quiz<br>slide deck<br>exercise due date | <span class="fas fa-fw fa-flask"></span><br><span class="fab fa-fw fa-github"></span><br>&nbsp; | lab meeting<br>sample code<br>&nbsp; |
 
 | Date                             | Topic                                                    | Reading                          | Lab                                                                                      | Notes                                                        |
 | -------------------------------: | -------------------------------------------------------- | -------------------------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
