@@ -5,7 +5,7 @@ permalink: /schedule/
 
 | Legend |   |
 | -----: | - |
-| <span class="far fa-fw fa-question-circle"></span><br><span class="far fa-fw fa-file-powerpoint"></span><br><span class="fas fa-fw fa-pencil-alt"></span><br><span class="fas fa-fw fa-flask"></span><br><span class="fab fa-fw fa-github"></span> | in-class quiz<br>link to a slide deck<br>exercise due date and link to write-up<br>lab meeting<br>link to sample code |
+| <span class="far fa-fw fa-question-circle"></span><br><span class="far fa-fw fa-file-powerpoint"></span><br><span class="fas fa-fw fa-pencil-alt"></span><br><span class="fas fa-fw fa-flask"></span><br><span class="fab fa-fw fa-github"></span> | in-class quiz<br>slide deck<br>exercise due date<br>lab meeting<br>sample code |
 
 | Date                             | Topic                                                    | Reading                          | Lab                                                                                      | Notes                                                        |
 | -------------------------------: | -------------------------------------------------------- | -------------------------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
