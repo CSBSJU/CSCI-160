@@ -22,7 +22,7 @@ permalink: /schedule/
 | 26 MAR \|<br>\|<br><del>\|</del> | File I/O<br>Exception handling<br>&nbsp;                 | 11.1-11.3<br>11.4-11.5<br>&nbsp; | <span class="fas fa-fw fa-flask"></span><br><span class="fas fa-fw fa-flask"></span><br> | [<span class="far fa-fw fa-file-powerpoint"></span>][FILE-IO] [<span class="fab fa-fw fa-github"></span>][FILE-IO-GH]<br><br>&nbsp; |
 | <del>02 APR \|</del><br>\|<br>\| | <br>Recursion<br>.                                       |                                  | <span class="fas fa-fw fa-flask"></span><br><span class="fas fa-fw fa-flask"></span><br> |  |
 | 09 APR \|<br>\|<br>\|            | Searching<br>Sorting<br>.                                | 14.6<br>14.1-14.3<br>14.4-14.5   | <span class="fas fa-fw fa-flask"></span><br><span class="fas fa-fw fa-flask"></span><br> | [<span class="far fa-fw fa-question-circle"></span>][Quiz 5]<br><br>&nbsp; |
-| 16 APR \|<br>\|<br>\|            | .<br>Java collections<br>.                               | 14.8<br>15<br>15                 | <span class="fas fa-fw fa-flask"></span><br><span class="fas fa-fw fa-flask"></span><br> | [<span class="far fa-fw fa-question-circle"></span>][Quiz 6]<br>[<span class="fab fa-fw fa-github"></span>][COLLECTIONS-GH]<br>&nbsp; |
+| 16 APR \|<br>\|<br>\|            | .<br>Java collections<br>.                               | 14.8<br>15<br>15                 | <span class="fas fa-fw fa-flask"></span><br><span class="fas fa-fw fa-flask"></span><br> | [<span class="far fa-fw fa-question-circle"></span>][Quiz 6]<br><br>&nbsp; |
 | 23 APR \|<br>\|<br>\|            | .<br>.<br>.                                              | 15<br>15<br>15                   | <span class="fas fa-fw fa-flask"></span><br><br>                                         | <br><br>[<span class="far fa-fw fa-question-circle"></span>][Quiz 7] |
 | 30 APR \|<br>\|<br>\|            | Advanced topics: GUIs<br>Advanced topics: generics<br>.  | 18<br>20<br>20                   | <span class="fas fa-fw fa-flask"></span><br>[Lab Exam 3]<br>                             |  |
 | 09 MAY \|                        | [Final exam]                                             |                                  |                                                                                          |  |
@@ -53,4 +53,3 @@ permalink: /schedule/
 [INHERITANCE-GH]: ../sample-code#inheritance
 [FILE-IO]: ../assets/slides/file-io/slides.pptx
 [FILE-IO-GH]: ../sample-code#file-io
-[COLLECTIONS-GH]: ../sample-code#collections
