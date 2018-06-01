@@ -1,29 +1,19 @@
-title: "CSCI/160 <small><small>v0.1.0</small></small>"
-title_separator: "-"
-author: CSBSJU
-description: Course materials for CSCI 160.
-lang: en-US
-timezone: UTC
+# Canvas settings.
+canvas:
+  prefix: "https://csbsju.instructure.com"
+  course: "9283"
+  # Exclude the following files/folders from uploading. Canvas Workflow gives
+  # precedence to include over exclude, so you can selectively include
+  # files/folders that exist in excluded directories.
+  exclude:
+    - files/slides
+  # Selectively include files/folders that have been previously excluded.
+  include:
+    - files/slides/**/*-final.pdf
+
+# Exclude the following files/folders from processing. Jekyll currently gives
+# exclude precedence over include, so list files/folders to be excluded here.
 exclude:
   - AUTHORS
   - LICENSE
-  - LICENSE.MIT
-
-plugins:
-  - jekyll-remote-theme
-  
-remote_theme: mmistakes/minimal-mistakes
-
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      toc_label: "Contents"
-      toc_icon: "list-ul"
-      sidebar:
-        nav: "docs"
+  - files

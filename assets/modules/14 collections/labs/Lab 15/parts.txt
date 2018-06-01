@@ -1,5 +1,0 @@
-1234 test-item-1 5
-1235 test-item-2 4
-1236 test-item-3 8
-1237 test-item-4 14
-1238 test-item-5 0
