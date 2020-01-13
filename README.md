@@ -29,34 +29,32 @@ by Cay Horstmann. This course is based on the sixth edition of the book, thus,
 it is RECOMMENDED that students acquire this edition.
 
 ### Terminology
-<dl>
-  <dt style="font-weight:normal;"><i>class meeting</i></dt>
-  <dd>A meeting scheduled during the time slot assigned to the course and during
-      the university approved academic calendar for the relevant semester. Such
-      meetings will normally take place in the assigned classroom, however, they
-      MAY occur elsewhere.</dd>
+class meeting
+: A meeting scheduled during the time slot assigned to the course and during the
+  university approved academic calendar for the relevant semester. Such meetings
+  will normally take place in the assigned classroom, however, they MAY occur
+  elsewhere.
 
-  <dt style="font-weight:normal;"><i>excused absence</i></dt>
-  <dd>An absence from a scheduled class meeting with prior permission from the
-      instructor. In the event that prior permission cannot be obtained, the
-      student MUST notify the instructor of the reason for the absence as soon
-      as reasonably possible. Reasons for missing a class meeting that qualify
-      as excused include, but are not limited to, documented illness, death in
-      your family, varsity athletic events (MUST NOT be practices), or other
-      performances.</dd>
+excused absence
+: An absence from a scheduled class meeting with prior permission from the
+  instructor. In the event that prior permission cannot be obtained, the student
+  MUST notify the instructor of the reason for the absence as soon as reasonably
+  possible. Reasons for missing a class meeting that qualify as excused include,
+  but are not limited to, documented illness, death in your family, varsity
+  athletic events (MUST NOT be practices), or other performances.
 
-  <dt style="font-weight:normal;"><i>unexcused absence</i></dt>
-  <dd>An absence that is not excused.</dd>
+unexcused absence
+: An absence that is not excused.
 
-  <dt style="font-weight:normal;"><i>original work</i></dt>
-  <dd>...</dd>
+original work
+: TBD
 
-  <dt style="font-weight:normal;"><i>closed book</i></dt>
-  <dd>...</dd>
+closed book
+: The book and any accompanying materials MUST NOT be used.
 
-  <dt style="font-weight:normal;"><i>open note</i></dt>
-  <dd>...</dd>
-</dl>
+open note
+: A single 8.5" x 11" piece of paper, front and back with nothing attached MAY
+  be used.
 
 ## Course policies
 ### Attendance
