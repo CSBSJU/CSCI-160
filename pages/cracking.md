@@ -1,6 +1,5 @@
 ---
 title: "Password cracking"
-permalink: /exercises/cracking/
 toc: true
 ---
 

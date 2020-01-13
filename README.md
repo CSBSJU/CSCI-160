@@ -24,9 +24,11 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
 interpreted as described in <a href="https://tools.ietf.org/html/rfc2119">RFC
 2119 <span class="fas fa-external-link-alt"></span></a>.
 
-Students are REQUIRED to have access to the textbook, *Big Java: Early Objects*
-by Cay Horstmann. This course is based on the sixth edition of the book, thus,
-it is RECOMMENDED that students acquire this edition.
+Students are REQUIRED to have access to the zyBook, [Java Early
+Objects](https://learn.zybooks.com/zybook/CSBSJUCSCI160IversonSpring2020) by
+Lysecky and Lizarraga et al. You SHOULD read the instructions in the [How to Use
+zyBooks](/courses/12826/assignments/132304) assignment for directions about
+obtaining access to the book, if you do not have it already.
 
 ### Terminology
 class meeting

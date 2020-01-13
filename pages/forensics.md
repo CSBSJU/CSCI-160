@@ -1,6 +1,5 @@
 ---
 title: "Image forensics"
-permalink: /exercises/forensics/
 toc: true
 ---
 
