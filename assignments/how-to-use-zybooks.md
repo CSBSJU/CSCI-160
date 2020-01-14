@@ -2,7 +2,7 @@
 title: "How to Use zyBooks"
 ---
 
-## How to create a zyBooks account and subscribe to the book for this course:
+## How to create a zyBooks account and subscribe to the book for this course: 
 
 This semester we will be using an online textbook, and you will need to buy a
 license from the publisher. Before following these instructions please note that
