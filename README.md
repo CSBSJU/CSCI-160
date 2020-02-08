@@ -13,7 +13,16 @@ missing an exam or submitting a late assignment&mdash;will be handled.
 
 ## Introduction
 ### Purpose
-Programming is at the core of computer science. Although most of the work done by computer scientists is not programming per se, that work is almost always under-girded by a knowledge of programming. It is essential that both programmers and computer scientists learn to program and to do so well. This course will provide students with the opportunity to learn the fundamental concepts and techniques of object-oriented computer programming. The object-oriented programming paradigm promises to improve the quality and reliability of computer software. In this course we will use the Java language, which is currently the most popular object-oriented language. Upon successful completion of the course, students will be able to:
+Programming is at the core of computer science. Although most of the work done
+by computer scientists is not programming per se, that work is almost always
+under-girded by a knowledge of programming. It is essential that both
+programmers and computer scientists learn to program and to do so well. This
+course will provide students with the opportunity to learn the fundamental
+concepts and techniques of object-oriented computer programming. The
+object-oriented programming paradigm promises to improve the quality and
+reliability of computer software. In this course we will use the Java language,
+which is currently the most popular object-oriented language. Upon successful
+completion of the course, students will be able to:
 * write well-designed Java programs for small-scale problems,
 * identify appropriate object classes for solving a given problem, and
 * write good documentation for programs.
@@ -93,15 +102,13 @@ submitted for a grade MUST be your own original work. Late assignment
 submissions MAY NOT be accepted.
 
 ### Examinations
-There will be two closed book/open note in-class exams, seven closed book/closed
-note in-class quizzes, three open book/open note in-lab exams, and one
-cumulative final exam. Each student's lowest two in-class quiz grades will be
-dropped. All quiz and exam times are documented on the <a
-href="https://csbsju.instructure.com/calendar">Canvas calendar <span class="fas
-fa-external-link-alt"></span></a> for this course; you are responsible for
-keeping those times clear in your schedule. Students MAY be allowed to make up
-missed exams in the case of an excused absence and at the discretion of the
-instructor.
+There will be two closed book/open note in-class exams, three open book/open
+note in-lab quizzes, and one cumulative final exam. All quiz and exam times are
+documented on the <a href="https://csbsju.instructure.com/calendar">Canvas
+calendar <span class="fas fa-external-link-alt"></span></a> for this course; you
+are responsible for keeping those times clear in your schedule. Students MAY be
+allowed to make up missed exams in the case of an excused absence and at the
+discretion of the instructor.
 
 ### Emails / Outlook meeting invitations
 I welcome emails and Outlook meeting invitations from students. However, you
@@ -121,9 +128,8 @@ or for grievous infractions, at all.
 The final grade for the course will be based on the percentages shown below.
 
 | Labs           | 15% |
-| Lab exams      | 10% |
-| Quizzes        | 10% |
-| Assignments    | 20% |
+| Lab quizzes    | 10% |
+| Assignments    | 30% |
 | In-class exams | 30% |
 | Final exam     | 15% |
 
