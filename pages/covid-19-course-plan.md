@@ -42,5 +42,5 @@ articulated:
 [aoe]: https://en.wikipedia.org/wiki/Anywhere_on_Earth
 [schedule]: {{ site.canvas.prefix }}/courses/{{ site.canvas.course }}/pages/meeting-schedule
 [zoom-class]: https://csbsju.zoom.us/j/523729525
-[zoom-labs]: https://csbsju.zoom.us/j/918476152
+[zoom-labs]: https://csbsju.zoom.us/j/917385837
 [zoom-instructions]: https://www.csbsju.edu/instructional-technology/classroom-and-a/v-support/zoom-conferencing
