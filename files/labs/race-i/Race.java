@@ -1,16 +1,15 @@
-// Color
 import java.awt.Color;
-// MouseEvent
 import java.awt.event.MouseEvent;
-// GLine, GOval, GRect
-import acm.graphics.*;
-// GraphicsProgram
+import acm.graphics.GLine;
+import acm.graphics.GOval;
+import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
 /**
  * A race program between a turtle (oval) and a hare (square)
- * 
- * @author <your name>, based on a template by Lynn Ziegler
+ *
+ * @author Faculty of the Computer Science department
+ * @author <your name>
  */
 public class Race extends GraphicsProgram {
   // instance variables
@@ -25,7 +24,7 @@ public class Race extends GraphicsProgram {
     //*** Fill in the code to draw the raceway and place the racers into their
     //*** starting positions
   }
- 
+
   /**
    * Move the racers forward with each click
    */
