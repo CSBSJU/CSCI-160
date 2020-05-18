@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+
+
+
+
+
+
+
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <title>CSCI 160 Final Project</title></head>
+
+<body style="color: rgb(0, 0, 102); background-color: rgb(255, 247, 215);" alink="#ff0000" link="#0000ee" vlink="#551a8b">
+
+<h1>CSCI 160 Final Project</h1>
+
+<h2>Creating a Typing Game</h2>
+<p>Your final course homework/project will be to create a game that can be used to improve a user's typing skills. The basic idea of the game is as follows. Random words &ldquo;float&rdquo; across the screen. The user types the words into a <code>JTextField</code> and presses enter.</p>
+<ul>
+<li>If the typist types the word correctly, points are awarded to the typist .</li>
+<li>If the word typed does not match, or if the word floats off the screen prior to the typist typing the word, the typist receives a strike.</li>
+</ul>
+<p>Once the typist receives three strikes, the game is over. We wish to have multiple degrees of difficulty for the game based on word length and the speed at which words appear and disappear off of the screen.</p>
+<h3>Preliminaries</h3>
+<p>Using a terminal window, copy the directory named&nbsp;<code>TypingGame</code>&nbsp;from&nbsp;<code>/usr/people/classes/CS160/labs</code>&nbsp;into your CS160 directory. Use the tree command to verify that the directory structure for your local copy of TypingGame matches the following:</p>
+<pre style="color: #d33682;">    TypingGame
+    |-- BannerController.java
+    |-- Banner.java
+    |-- BannerMover.java
+    |-- Project.html
+    |-- solution
+    |    |-- RandomWord.class<br />    |    |-- RandomWordTester.class
+    |    `-- WordSorter.class
+    `-- vbush.txt</pre>
+<h3>Sample Solution(s)</h3>
+<p>As usual, to view sample solutions, use the class files contained in the&nbsp;<code>solution</code>&nbsp;subdirectory.&nbsp; Note, however, that this is a much more open-ended project than previous labs or homework assignments.&nbsp; There is not "one answer" that you must match exactly.</p>
+<p>Sample solutions for Part 1 are already available.&nbsp; A sample for the complete program is not yet available; you should be creative in your designs!</p>
+<h3>Part 1: Creating a random word generator <span style="background: yellow; color: red; font-weight: bold;">(In lab)</span></h3>
+<p>In order to float words across a screen, we need to have a source of words of varying length. One way to do this is to take a large document and then use the words in that file as a source of words. The vbush.txt text file is available in your lab directory. (P.S. The text file provided is an article written by Vannebar Bush in 1945. In the article, he describes many of the concepts behind the World Wide Web when there were few computers in the world!). From the command line we can use the wc command on file vbush.txt to find out how many words are in the file (i.e. wc vbush.txt). The wc command prints the <i>line</i>, <i>word</i>, and <i>byte</i> counts for the specified file.</p>
+<p><span style="background-color: #ffff00;">Report the number of words in the file to your TA or lab instructor.</span></p>
+<p>This file contains plenty of words, but is not quite ready for use. Since our game is intended to send individual words on the screen one at a time we will want to remove all punctuations such as commas (,) , periods (.) , colons (:), semicolons (;), apostrophes(&lsquo;), dashes(-), and exclamation (!) and question marks (?) as well other characters (such as /, @, (, ) and ~) that show up in the file. In addition, we wish to sort the words based on word size.</p>
+<p>Step one in your game development is to create a <code>WordSorter</code> Java class. This class should have a <code>public static void main(String [] args)</code> method in order to run it from the command line with an input filename as an argument (for which you will provide <code>vbush.txt</code>). It should generate three new files that will contain small (3-5 letters), medium (6-8 letters) and large (&gt;8 letters)<span style="background-image: initial; background-position: initial; background-repeat: initial; background-attachment: initial; font-weight: bold;"> (ignore words of length 2 or less)</span> words where the words in the input file have been cleaned (i.e. filtered to remove the punctuation and other characters). You will be reading words from the input file one at a time, cleaning them, and writing them to one of the three files. Class <code>String</code> has method <code>replaceAll(String&nbsp;match,&nbsp;String&nbsp;replacement)</code> that can be used for cleaning purposes; e.g., to remove <code>&ldquo;@&rdquo;</code> from a <code>String x</code>, you can write <code>x&nbsp;=&nbsp;x.replaceAll("@",&nbsp;"")</code>. This replaces all matches of <code>"@"</code>&nbsp;with the empty string which effectively removes the matches. You can also specify a <em>character class</em> to remove all of them simultaneously; e.g., to remove <code>/</code>, <code>@</code>, <code>%</code> and <code>$</code>, along with other punctuation characters recognized by Java, you can use <code>x&nbsp;=&nbsp;x.replaceAll("\\p{Punct}", "")</code>.</p>
+<p>Next, create a <code>RandomWord</code> class that takes a filename as a parameter in its constructor and has a <code>next()</code> method that will return a word from the specified file at random. Do this by reading the words in the specified file into an <code>ArrayList&lt;String&gt;</code> and then generating a random location number using the <code>Random</code> class (or&nbsp;the <code>Math.random()</code>&nbsp;method) to find the next word to return. Class <code>BannerMover</code> uses the <code>Random</code> class to&nbsp;randomly access words from the <code>ArrayList&lt;String&gt;</code> defined in its constructor; you might want to follow the steps outlined there.</p>
+<p><span style="background-color: #ffff00;">Write a short demo program that uses the <code>RandomWord</code> class and show your Lab Instructor or TA that you have successfully completed this part of the program.</span></p>
+<h3>Part 2: Creating an Appropriate GUI</h3>
+<p>The second step is to design the GUI that you intend to use. Remember that you need to have a way for the user to select the difficulty level, a canvas for the words to float across the screen, a place for the user to type, a place to show the score and the number of strikes (or number of strikes left). Also include a Start and an Exit button. You should first sketch your design on paper and show it to your Lab Instructor or TA and then develop the code that provides all the GUI components needed. The functionality behind the GUI components can be developed later.</p>
+<h3>Part 3: Sending Words Across the Screen</h3>
+<p>Some of the work for this part is done in that you have access to the <code>Banner</code> and <code>BannerMover</code> classes. You can use them and modify them as you like. Remember that you need to send multiple words across the screen (travel horizontally from left to right) without user action. <span style="background-image: initial; background-position: initial; background-repeat: initial; background-attachment: initial; font-weight: bold;">The banner containing the word should be removed from canvas after the user types in his/her word and hits enter.</span> You may want to look carefully at the <code>BannerController</code> class. A variation of this might help you send words across the screen. For now, send the words across the screen one at a time. This makes it easier to determine if a word typed matches the word on the screen.</p>
+<p>Currently, class <code>BannerMover</code> uses a <code>Random</code> object to randomly access random words from the <code>ArrayList&lt;String&gt;</code> defined in its constructor. You need to change class <code>BannerMover</code> so that its constructor will take a word string and a speed. Your application should allow for speeds and random words based on the level of difficulty selected by the user (for easy level, use slow speed and the small words file; for medium level, use medium speed and the medium words file; and for hard level, use fast speed and the long words file). You can use the <code>RandomWord</code> class created in Part I to generate the words.</p>
+<h3>Part 4: Putting It Together</h3>
+<p>You now need to tie everything together where actions are tied to the GUI. You will also need to determine whether or not the word typed by the user matches the word on a banner. Whenever this occurs, the word banner should be removed from the screen and a new word banner should be generated. If a word is mistyped or if a word floats off the screen and disappears, you should mark it against the user; otherwise, the user gets credit for typing the word correctly. <span style="background-image: initial; background-position: initial; background-repeat: initial; background-attachment: initial; font-weight: bold;">The game should end when the user gets three strikes.</span></p>
+<p>Feel free to add additional functionality and style to the game. You may want to have multiple words float across the screen at once or have them float from different locations at random. (Be sure you have the basic program working first and that you save a copy of it before trying additional features.)</p>
+<h3>A Note on JavaDoc, Style</h3>
+<p>You should carefully document your program with appropriate comments throughout. By the time you have finished the program, you should have complete JavaDocs for all classes, methods, complex code regions, etc. that you create.&nbsp; <b>Once finished, you should generate the (HTML) JavaDoc for your program.&nbsp; To do so, click the "Javadoc" button in the top-right corner of your DrJava window.</b></p>
+<p><span>As always, all of your code must follow proper&nbsp;</span><a href="https://csbsju.instructure.com/courses/10215/pages/java-style-guide" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/pages/java-style-guide" data-api-returntype="Page">Java Syle</a><span>&nbsp;conventions, or you will lose points.&nbsp; See the&nbsp;</span><a href="https://csbsju.instructure.com/courses/10215/pages/java-style-guide" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/pages/java-style-guide" data-api-returntype="Page">Style Guide</a><span>&nbsp;for details and examples.</span></p>
+<h3>Submitting Your Project</h3>
+<p>You should submit all files for this assignment, including those for the lab portion (if you did not get it checked off in lab), directly to /usr/people/handins/CS160. Put all of them in a single directory named &lt;YourLastName&gt;_HW6.</p>
+
+</body></html>

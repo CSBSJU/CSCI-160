@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+
+
+
+
+
+
+
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <title>CSCI 160 Lab 2</title></head>
+
+<body style="color: rgb(0, 0, 102); background-color: rgb(255, 247, 215);" alink="#ff0000" link="#0000ee" vlink="#551a8b">
+
+<h1>CSCI 160 Lab 2</h1>
+
+<h2>Part 1:&nbsp;Introduction to the JTF Packages</h2>
+<p>In early 2004, the ACM created the Java Task Force (JTF)&nbsp; to review the Java language, APIs, and tools from the perspective of introductory computing education and to develop a stable collection of pedagogical resources that will make it easier to teach Java to first-year computing students without having those students overwhelmed by its complexity.</p>
+<p>This lab is designed to give you a gentle introduction into how to use the JTF materials in the context of an introductory programming course.</p>
+<p>Feel free to use the following resources (especially the free book, the Java API, and the ACM JTF tutorial). If you are not clear about a certain class and its functionality <strong>at any point during the semester</strong>, the tutorial and the book may give you better explanations and examples than the API page (which is much more dense).</p>
+<p style="padding-left: 60px;"><img src="Images/JTF_book.png" alt="Textbook for ACM JTF Libraries" width="218" height="270" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/files/828344" data-api-returntype="File" />&nbsp; &nbsp;<a href="http://people.reed.edu/~jerry/121/materials/artsciencejava.pdf">http://people.reed.edu/~jerry/121/materials/artsciencejava.pdf</a></p>
+<p style="padding-left: 60px;"><strong>ACM JTF URL</strong>: <a href="http://cs.stanford.edu/people/eroberts/jtf/">http://cs.stanford.edu/people/eroberts/jtf/</a></p>
+<p style="padding-left: 60px;">ACM Java API: <a href="http://cs.stanford.edu/people/eroberts/jtf/javadoc/student/index.html">http://cs.stanford.edu/people/eroberts/jtf/javadoc/student/index.html</a></p>
+<p style="padding-left: 60px;">ACM JTF Tutorial: <a href="http://cs.stanford.edu/people/eroberts/jtf/tutorial/Tutorial.pdf">http://cs.stanford.edu/people/eroberts/jtf/tutorial/Tutorial.pdf</a></p>
+<h3>Section 1.1: Getting Started</h3>
+<p>The programs that you write using ACM libraries are <em>applets</em>&nbsp;(called JApplet), which are programs that run in the context of a web browser. These are going to be one of three types: GraphicsProgram, ConsoleProgram and DialogProgram.</p>
+<p><strong>GraphicsProgram</strong>:<span>&nbsp;</span><a href="http://cs.stanford.edu/people/eroberts/jtf/javadoc/student/acm/program/Program.html">Program</a>&nbsp;whose window is used for drawing graphics.</p>
+<p><strong>ConsoleProgram</strong>: <a href="http://cs.stanford.edu/people/eroberts/jtf/javadoc/student/acm/program/Program.html">Program</a>&nbsp;whose window contains a console (loosely: a terminal).</p>
+<p><strong>DialogProgram</strong>: <a href="http://cs.stanford.edu/people/eroberts/jtf/javadoc/student/acm/program/Program.html">Program</a>&nbsp;that takes its input from a&nbsp;IODialog&nbsp;object.</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="Images/acm_program_hierarchy.png" alt="ACM Program Hierarchy" width="509" height="257" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/files/834144" data-api-returntype="File" /></p>
+<p>Feel free to explore these 3 classes in the <a href="https://cs.stanford.edu/people/eroberts/jtf/javadoc/student/index.html">ACM Java API documentation</a>.</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="Images/acm_program_api.png" alt="ACM Program API" width="638" height="430" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/files/834171" data-api-returntype="File" /></p>
+<h4>Importing ACM Library Classes</h4>
+<p>Before you use these classes in your programs you need to import them from the class library. Classes in ACM Java library are grouped into packages</p>
+<ul>
+<li>E.g., the acm.programs package contains 6 classes:<br /><img style="display: block; margin-left: auto; margin-right: auto;" src="Images/acm_programs_classes.png" alt="ACM Program Classes List" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/files/834233" data-api-returntype="File" /></li>
+<li>To import a specific class into your program, put an&nbsp;import&nbsp;statement at the <u>beginning</u> of the program:<br />&nbsp; &nbsp; <code>import pacakagename.className;</code>
+<ul>
+<li>E.g., importing DialogProgram from the acm.program package:<br />&nbsp; &nbsp; <code>import acm.program.DialogProgram;</code></li>
+</ul>
+</li>
+<li>To import&nbsp;<span style="text-decoration: underline;">all the classes</span> contained in a particular package, use *<br />
+<ul>
+<li>E.g., to import all classes in the acm.program package:<br />&nbsp; &nbsp; <code>import acm.program.*;</code></li>
+</ul>
+</li>
+</ul>
+<h3>Section 1.2: Writing your first program</h3>
+<p>The best way to learn a new programming language is by writing programs in it. Let's write a first program that prints "hello, world" in the console.</p>
+<h4>(1) ConsoleProgram</h4>
+<p>Program that installs a console in the window. This is like a terminal window where all your user interactions with program (input/output) will be taking place.&nbsp; A ConsoleProgram program looks something like this:</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="Images/consoleprogram.png" alt="consoleprogram Syntax" width="435" height="312" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/files/834266" data-api-returntype="File" /></p>
+<p>When you compile and run your program, the <code>main()</code> method will run. It automatically calls the <code>init()</code> method first and the <code>run()</code> method next. The <code>init()</code> method is optional; this is where you place your initialization code. For example, initialization code might include: code for creating objects, initializing some values etc. The <code>run()</code> method is where you place the major part of your code that you want to run.</p>
+<p>Let us start with an example.&nbsp; <strong>Write the following program in DrJava</strong>:</p>
+<pre style="padding-left: 30px;">/*<br />&nbsp;* File: HelloConsole.java<br />&nbsp;* -----------------------<br />&nbsp;* This program displays the message "hello, world" and is inspired<br />&nbsp;* by the first program "The C Programming Language" by Brian<br />&nbsp;* Kernighan and Dennis Ritchie. This version displays its message<br />&nbsp;* using a console window.<br />&nbsp;*/<br />import acm.program.ConsoleProgram;<br /><br />public class HelloConsole extends ConsoleProgram<br />{<br />    public void run()<br />    {<br />    &nbsp;&nbsp;&nbsp; this.println("hello, world");<br />&nbsp;&nbsp;&nbsp; }<br />}</pre>
+<p>Save it as HelloConsole.java in your Lab2 folder in your home directory. Compile and run the program. If everything is working, the computer should pop up a console window that looks something like this:</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="Images/helloconsole.png" alt="Hello World via ConsoleProgram" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/files/834294" data-api-returntype="File" /></p>
+<p>This is a simple program that prints &ldquo;hello, world&rdquo; to the console. Since no initialization takes place, we omitted the <code>init()</code> method. The statement <code>this.println("hello, world");</code> calls the <code>println()</code> method defined in the ConsoleProgram class. Any public <strong>method/inherited method</strong> defined in ConsoleProgram can be called in our program. To figure out which methods are defined in a Java library class, you need to look at the the API page for that class. Since ConsoleProgram is an ACM library class (not a standard Java library class) you need to open it in ACM Java library documentation (<a href="http://cs.stanford.edu/people/eroberts/jtf/javadoc/student/index.html">http://cs.stanford.edu/people/eroberts/jtf/javadoc/student/index.html</a>). Locate and click on ConsoleProgram under the &ldquo;All Classes&rdquo; tab on the left-hand side.</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="Images/consoleprogram_api1.png" alt="ConsoleProgram API" width="462" height="633" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/files/834323" data-api-returntype="File" /></p>
+<p>The methods you can call in your program (that extends ConsoleProgram) are listed under the Method Summary and Inherited Method Summary. All of the input (read) methods and output (print) methods are listed under inherited methods:</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="Images/consoleprogram_api2.png" alt="ConsoleProgram API" width="775" height="581" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/files/834332" data-api-returntype="File" /></p>
+<p>You can call any of these methods in your program. To call a method of a class, say X, we generally need to create an object from this class and call the method on it (we will cover this in more detail in part 2). However, you can directly call a method of X without creating objects of X in another class (e.g. HelloConsole.java) if it contains the suffix &ldquo;extends X&rdquo; in its class definition.</p>
+<p>For example, note that in our HelloConsole program this was the case (i.e., it extends ConsoleProgram):</p>
+<pre style="padding-left: 30px;">public class HelloConsole <span style="color: #ff0000;"><strong>extends ConsoleProgram</strong></span><br />{</pre>
+<p>To call a method, you simply give the method name (optionally, with a list of arguments, if specified). If there is a return value, you can capture it in a matching data type variable.</p>
+<p style="padding-left: 30px;">Example 1: no input arguments, no return value</p>
+<p style="padding-left: 90px;"><img src="Images/egprintln.png" alt="println example" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/files/834353" data-api-returntype="File" /></p>
+<p style="padding-left: 90px;">Example use:&nbsp; &nbsp; <code>this.println();</code></p>
+<p style="padding-left: 30px;">Example 2: no input arguments, has a return value</p>
+<p style="padding-left: 90px;"><img src="Images/eggettitle.png" alt="gettitle example" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/files/834357" data-api-returntype="File" /></p>
+<p style="padding-left: 90px;">Example use:&nbsp; &nbsp; <code>String title = this.getTitle();</code></p>
+<p style="padding-left: 30px;">Example 3: has arguments, has a return value</p>
+<p style="padding-left: 90px;"><img src="egreadboolean.png" alt="readboolean example" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/files/834361" data-api-returntype="File" /></p>
+<p style="padding-left: 90px;">Example use:&nbsp; &nbsp; <code>boolean continue = this.readBoolean("Do you wish to continue?");</code></p>
+<p>This basic rule of calling methods applies when you want to call a method of any class X (e.g., ConsoleProgram) in another class Y (e.g., HelloConsole) that extends X.</p>
+<h4>(2) DialogProgram</h4>
+<p>Program that takes its input from a IODialog object.&nbsp; The syntax is the same as that of a ConsoleProgram; the only difference is that we extend DialogProgram instead.</p>
+<p><strong>Write and save the following program as HelloDialog.java</strong>:</p>
+<pre style="padding-left: 30px;">/*<br />&nbsp;* File: HelloDialog.java<br />&nbsp;* -----------------------<br />&nbsp;* This program displays the message "hello, world" and is inspired<br />&nbsp;* by the first program "The C Programming Language" by Brian<br />&nbsp;* Kernighan and Dennis Ritchie. This version displays its message<br />&nbsp;* in a dialog box.<br />&nbsp;*/<br />import acm.program.DialogProgram;<br /><br />public class HelloDialog extends DialogProgram<br />{<br />    public void run()<br />    {<br />    &nbsp;&nbsp;&nbsp; this.println("hello, world");<br />&nbsp;&nbsp;&nbsp; }<br />}</pre>
+<p>If you compile and run the HelloDialog.java program in precisely the same way that you ran HelloConsole.java, the "hello, world" message won&rsquo;t appear in a console window. In fact, the program doesn&rsquo;t create a program frame at all. Instead, the program pops up an interactive dialog box that looks something like this (although the precise format of the display will vary depending on what operating system you are using and what &ldquo;look and feel&rdquo; it defines for Java applications):</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="Images/hellodiag.png" alt="Hello World via DialogProgram" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/files/834368" data-api-returntype="File" /></p>
+<h4>(3) GraphicsProgram</h4>
+<p>Display graphics on a canvas (labels, rectangles etc.).&nbsp; The syntax here is again similar:</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="Images/graphicsprogramsyntax.png" alt="graphicsprogram Syntax" width="532" height="294" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/files/834383" data-api-returntype="File" /></p>
+<p>Note that in addition to importing GraphicsProgram class, we are also importing all classes in acm.graphics package. Go and explore classes in this package in the ACM API. You will see these are classes representing graphical objects (e.g. GLabel for labels, GRect for rectangles) that you may want to place on the canvas when running your graphics program.</p>
+<p>Write and save the following program as HelloGraphics.java:</p>
+<pre style="padding-left: 30px;">/*<br />&nbsp;* File: HelloGraphics.java<br />&nbsp;* ------------------------<br />&nbsp;* This program displays the message "hello, world" and is inspired<br />&nbsp;* by the first program "The C Programming Language" by Brian<br />&nbsp;* Kernighan and Dennis Ritchie.&nbsp; This version displays the message<br />&nbsp;* graphically.<br />&nbsp;*/<br /><br />import acm.graphics.*;<br />import acm.program.*;<br /><br />public class HelloGraphics extends GraphicsProgram<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;public void run()<br />    {<br />    &nbsp;&nbsp;&nbsp; GLabel label = new GLabel("hello, world");<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; label.setFont("SansSerif-100");<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; double x = (this.getWidth() - label.getWidth()) / 2;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; double y = (this.getHeight() + label.getAscent()) / 2;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.add(label, x, y);<br />&nbsp;&nbsp;&nbsp; }<br />}</pre>
+<p>The HelloGraphics.java file uses the facilities of the acm.graphics package to display the message in large, friendly letters across the window:</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="Images/hellographics.png" alt="Hello World via GraphicsProgram" width="385" height="194" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/files/834386" data-api-returntype="File" /></p>
+<p>The details of the HelloGraphics program is not important at this point. Even so, the basic idea is likely to be clear, even if you could not have generated the code as it stands. The first line creates a GLabel object with the message text, the second line gives it a larger font, and the last three lines take care of adding the label so that it is centered in the window. What is important to notice is that the HelloGraphics class extends GraphicsProgram, which is yet another category of program. These three classes&mdash;ConsoleProgram, DialogProgram, and GraphicsProgram&mdash;are the building blocks for Java applications built using the acm.program package, which is introduced in the following section.</p>
+<p><span style="background-color: #ffff00;">Show the output of three programs to your TA before you move on to next section.</span></p>
+<h3>Section 1.3: Adding Two Numbers</h3>
+<p>The following console program, Add2Console.java, prompts the user for two numbers and prints the total:</p>
+<pre style="padding-left: 30px;">/*<br /> * File: Add2Program.java<br /> * ----------------------<br /> * This program adds two numbers and prints their sum.  Because<br /> * this version is a Program, input and output are assigned to<br /> * System.in and System.out.<br /> */<br />import acm.program.*;<br /><br />public class Add2Program extends ConsoleProgram<br />{<br />    public void run()<br />    {<br />        this.println("This program adds two numbers.");<br />        int n1 = this.readInt("Enter n1: ");<br />        int n2 = this.readInt("Enter n2: ");<br />        int total = n1 + n2;<br />        this.println("The total is " + total + ".");<br />    }<br />}</pre>
+<p>Write, compile and run the program. Now write a program called <strong>Add2Dialog.java</strong> that extends DialogProgram to do the same. &nbsp;The program should produce output like the following:</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="Images/add2dialogoutput.png" alt="Add2Dialog output" width="500" height="298" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/files/834397" data-api-returntype="File" /></p>
+<p><span style="background-color: #ffff00;">Show the output of both Add2Console.java and Add2Dialog.java to your TA before proceeding to next section.</span></p>
+<h2>Part 2: Creating objects from classes</h2>
+<p>The Java ACM library offers many predefined classes for you to use. These classes typically contain 1 or more methods which represent the functionalities or behaviors of the class. For example, the GRect class represents a graphical rectangle that you can display in a graphics program.&nbsp; GRect has many methods that allow us to manipulate a rectangle object. Open the ACM Java API documentation for GRect class and explore:</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="Images/grect.png" alt="GRect API" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/files/834404" data-api-returntype="File" /></p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="Images/grect_methods.png" alt="GRect Methods" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/files/834407" data-api-returntype="File" /></p>
+<p>You will notice that there are 3 important areas:</p>
+<ol>
+<li>Constructors</li>
+<li>Methods</li>
+<li>Inherited Methods</li>
+</ol>
+<p>Constructors let you create rectangle objects from GRect class.&nbsp; Methods and Inherited Methods let you manipulate those created objects (e.g. move, scale, fill with color). We are next going to study these 3.</p>
+<h3>Section 2.1: Creating objects</h3>
+<p>To use the methods defined in a class you need to create an object of the class first. To use a predefined class in your program, you should import that class. For example, if you need to use the GRect class, you should import it as follows:</p>
+<pre style="padding-left: 30px;">import acm.graphics.GRect;</pre>
+<p>you can look at the API page to figure out this fully qualified name (packagename.classname):</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="Images/grect_api.png" alt="GRect Fully-Qualified name" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/files/834417" data-api-returntype="File" /></p>
+<p>To create an object, we need to use one of the available constructors from the constructor list of the class.&nbsp; The syntax for creating an object from a class is as follows:</p>
+<pre style="padding-left: 30px;"><em>ClassName</em> objectName = new <em>ClassName</em>(list of arguments);</pre>
+<p><em>ClassName</em> is the class that you are trying to create an object of. objectname is any variable name you give to the object. You should give some meaningful name. new is a keyword (i.e., it is important to include, and you cannot use it as a variable name). The list of arguments is decided based on which constructor you plan to use.</p>
+<p>For example, suppose that we want to create an object of the GRect class. We have 2 constructors available:</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="Images/grect_constructors.png" alt="GRect Constructors" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/files/834420" data-api-returntype="File" /></p>
+<p>If we use first constructor to create the object, we are required to specify values for width and height. The types of the values you give should match the types specified in the constructor and the order you specify them should be the same order as in the API documentation. For example,we can create a rectangle object of width 2.3 and height 5.0 as follows:</p>
+<pre style="padding-left: 30px;">GRect rectangle1 = new GRect(2.3, 5.0);</pre>
+<p>The second constructor also takes an (x, y) position for drawing the rectangle.&nbsp; Here is an example (rectangle at x=100, y=50 of width 2.3 and height 5.0):</p>
+<pre style="padding-left: 30px;">GRect rectangle2 = new GRect(100.0, 50.0, 2.3, 5.0);</pre>
+<h3>Section 2.2: Manipulating objects</h3>
+<p>Now that we have created an object, we can manipulate it by calling methods/inherited methods defined for that class.&nbsp; The syntax for calling a method on an object is as follows:</p>
+<p style="padding-left: 30px;"><code>objectName.methodName(parameterList);</code></p>
+<p>For example, let us say we want to find the width of the <code>rectangle1</code> object. To start, we should go to ACM Java API page for GRect and read the method/inherited method explanations to&nbsp;find a match for what we want to do.&nbsp; It looks like the <code>getWidth()</code> method will get our job done:</p>
+<p style="text-align: center;"><img src="Images/getwidth.png" alt="getWidth method" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/files/834708" data-api-returntype="File" /></p>
+<p>We can call it as follows.&nbsp; (Note that <code>getWidth()</code> has a return value, so we can capture it using a variable with matching data type. If the return type is void, you do not need to do this.)</p>
+<pre style="padding-left: 30px;">double width = rectangle1.getWidth();</pre>
+<p>As another example, suppose that we want to move our <code>rectangle1</code> by 10 pixels in the x direction and 20 pixels in the y direction. Browsing the API page, you would find the following method that will get our job done:</p>
+<p style="text-align: center;"><img src="Images/movemethod.png" alt="move method" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/files/834712" data-api-returntype="File" /></p>
+<p style="text-align: left;">We can call it as follows.&nbsp; (Note that, here, the return type is void, so there is no need to capture a return value.)</p>
+<pre style="text-align: left; padding-left: 30px;">rectangle1.move(10.0, 20.0);</pre>
+<p style="text-align: left;">The HelloGraphics class you wrote earlier does exactly this. It creates a GLabel object called label with text &ldquo;hello, world&rdquo; in it. Then it calls 3 methods on this object: <code>setFont()</code>, <code>getWidth()</code>, and <code>getAcent()</code> to manipulate that object:</p>
+<p style="text-align: center;"><img src="Images/methods_in_HelloGraphics.png" alt="Methods in HelloGraphics" width="597" height="310" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/files/834720" data-api-returntype="File" /></p>
+<p style="text-align: left;">Most of the classes work this way, in that you can create objects from them and manipulate those objects by calling methods (with a few exceptions that you will learn later). So, if you completed Parts 1 and 2 successfully, you should be able to use ACM Java API to create objects of any ACM library classes you want and call methods on them.</p>
+<h2 style="text-align: left;">Part 3: Using the acm.graphics package</h2>
+<p style="text-align: left;">The class structure of acm.graphics package appears in following figure:</p>
+<p style="text-align: left;"><img style="display: block; margin-left: auto; margin-right: auto;" src="Images/acmgraphics.png" alt="acm.graphics classes" width="500" height="348" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/files/834723" data-api-returntype="File" /></p>
+<p style="text-align: left;">Conceptually, GObject represents the universal class of graphical objects that can be displayed (GLine, GOval, etc). When you use acm.graphics, you assemble a picture by constructing various graphical objects (GObjects such as GLine, GOval, etc). and adding them to a canvas (GCanvas) at the appropriate locations.</p>
+<h3 style="text-align: left;">Section 3.1: FeltBoard Example</h3>
+<p style="text-align: left;">Let us build a GraphicProgram modeling a felt board&mdash;the sort of board one might find in an elementary school classroom. A child creates pictures by taking shapes of colored felt and sticking them onto a large felt board that serves as the background canvas for the picture. The pieces stay where the child puts them because felt fibers interlock tightly enough for the pieces to stick together. The following figure shows a graphical model of a felt board.</p>
+<p style="text-align: left;"><img style="display: block; margin-left: auto; margin-right: auto;" src="Images/sample_feltboard.png" alt="Sample feltboard" width="278" height="173" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/files/834729" data-api-returntype="File" /></p>
+<p style="text-align: left;">To create the picture, we need to create two graphical objects&mdash;a red rectangle and a green oval&mdash;and add them to the graphical canvas that forms the background. The code for the FeltBoard example appears below:</p>
+<pre style="padding-left: 30px;">/*<br /> * File: FeltBoard.java<br /> * --------------------<br /> * This program offers a simple example of the acm.graphics package<br /> * that draws a red rectangle and a green oval. The dimensions of<br /> * the rectangle are chosen so that its sides are in proportion to<br /> * the "golden ratio" thought by the Greeks to represent the most<br /> * aesthetically pleasing geometry.<br /> */<br />import acm.program.*;<br />import acm.graphics.*;<br />import java.awt.*;<br /><br />public class FeltBoard extends GraphicsProgram<br />{<br />    /** Constant representing the golden ratio */<br />    public static final double PHI = 1.618;<br /><br />    /** Runs the program */<br />    public void run()<br />    {<br />        GRect rect = new GRect(100, 50, 100, 100 / PHI);<br />        rect.setFilled(true);<br />        rect.setColor(Color.RED);<br />        this.add(rect);<br />&nbsp;       GOval oval = new GOval(150, 50 + 50 / PHI, 100, 100 / PHI);<br />&nbsp;       oval.setFilled(true);<br />&nbsp;       oval.setColor(Color.GREEN);<br />&nbsp;       this.add(oval);<br />    }<br />}</pre>
+<p style="text-align: left;">Save and compile this program in DrJava, and verify that it works as expected.</p>
+<h3 style="text-align: left;">Section 3.2: Coordinate System</h3>
+<p style="text-align: left;">The acm.graphics package uses the same basic coordinate system that traditional Java programs do. Coordinate values are expressed in terms of pixels, which are the individual dots that cover the face of the screen. Each pixel in a graphics window is identified by its x and y coordinates, with x values increasing as you move rightward across the window and y values increasing as you move down from the top. The point (0, 0)&mdash;which is called the origin&mdash;is in the upper left corner of the window. An annotated Java coordinate system is shown below:</p>
+<p style="text-align: center;"><img src="Images/coordinate_system.png" alt="ACM coordinate system" width="466" height="236" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/files/834744" data-api-returntype="File" /></p>
+<p style="text-align: left;">Feel free to look up and study the Javadoc pages for the GCanvas, GRect, and GOval classes. For the most part, you won&rsquo;t use the GCanvas class directly; instead, you will use the GraphicsProgram class, which automatically creates a GCanvas and installs it in the program window, as illustrated in several preceding examples.</p>
+<p style="text-align: left;"><strong>GLabels</strong>:&nbsp;Now that you know about these methods, you are finally in a position to understand the details of how the code in the HelloGraphics example centers the label on the canvas. The relevant lines look like this:</p>
+<pre style="text-align: left; padding-left: 30px;">GLabel label = new GLabel("hello, world");<br />double x = (getWidth() - label.getWidth()) / 2;<br />double y = (getHeight() + label.getAscent()) / 2;<br />this.add(label, x, y);</pre>
+<p style="text-align: left;">Think through what is happening here.&nbsp; Why does this work?</p>
+<p style="text-align: left;"><strong>GPolygon</strong>: Other classes exist (with other methods that we didn't explore above.&nbsp; For example, you can define a diamond GPolygon relative to its center using the following code:</p>
+<pre style="text-align: left; padding-left: 30px;">GPolygon diamond = new GPolygon();<br />diamond.addVertex(-30, 0);<br />diamond.addVertex(0, 40);<br />diamond.addVertex(30, 0);</pre>
+<h3 style="text-align: left;">Section 3.3: A final, complete exercise</h3>
+<p style="text-align: left;">Write a GraphicsProgram subclass DrawRobot.java that generates the following picture of a robot.&nbsp; This may involve exploring other methods of ACM classes not described above.</p>
+<p style="text-align: left;"><img style="display: block; margin-left: auto; margin-right: auto;" src="Images/drawrobot.png" alt="Drawing of a Robot" width="389" height="307" data-api-endpoint="https://csbsju.instructure.com/api/v1/courses/10215/files/834748" data-api-returntype="File" /></p>
+<p style="text-align: left;">Play with the coordinates until you get something that looks very similar. Show your work to your TA.&nbsp; Congratulations!</p>
+
+</body></html>
